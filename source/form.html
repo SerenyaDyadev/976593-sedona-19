@@ -15,8 +15,8 @@
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Фото и видео</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link" href="form.html">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Форма отзыва</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">HTML academy</a></li>
         </ul>
       </div>
@@ -29,9 +29,105 @@
         <b class="intro-name">Sedona</b>
       </div>
       <h1 class="page-header">Оставьте свой отзыв</h1>
-      <p class="page-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      <section class="page-form">
-      </section>
+      <p class="page-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+        достопримечательностях</p>
+      <aside class="page-form">
+        <h2 class="visually-hidden">Форма отзыва</h2>
+        <form method="post" action="https://echo.htmlacademy.ru">
+          <fieldset class="form-name">
+            <legend class="form-name__titel">Представьтесь:</legend>
+            <ul class="form-name__list">
+              <li class="form-name__item">
+                <label class="form-name__item--label">Имя<sup>*</sup>:
+                  <input class="form-name__item--input" type="text" name="name" placeholder="Петр">
+                </label>
+              </li>
+              <li class="form-name__item">
+                <label class="form-name__item--label">Фамилия<sup>*</sup>:
+                  <input class="form-name__item--input" type="text" name="family-name" placeholder="Иванов">
+                </label>
+              </li>
+              <li class="form-name__item">
+                <label class="form-name__item--label">Отчество:
+                  <input class="form-name__item--input" type="text" name="patronymic" placeholder="Александрович">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-contacts">
+            <legend class="form-contacts__titel">Контактная информация:</legend>
+            <ul class="form-contacts__list">
+              <li class="form-contacts__item">
+                <label class="form-contacts__item--label">Контактный телефон<sup>*</sup>:
+                  <input class="form-contacts__item--input" type="tel" name="phone" placeholder="Введите телефон">
+                </label>
+              </li>
+              <li class="form-contacts__item">
+                <label class="form-contacts__item--label">Электронная почта<sup>*</sup>:
+                  <input class="form-contacts__item--input" type="email" name="email" placeholder="Введите e-mail">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-feeling">
+            <legend class="form-feeling__titel">Ваше общее впечатление:</legend>
+            <ul class="form-feeling__list">
+              <li class="form-feeling__item">
+                <label class="form-feeling__item--checkbox-label"><input class="visually-hidden" type="checkbox"
+                    name="feeling-good" checked>
+                  <span class="form-feeling__item--checkbox-name">Скорее положительное</span>
+                </label>
+              </li>
+              <li class="form-feeling__item">
+                <label class="form-feeling__item--checkbox-label">
+                  <input class=" visually-hidden" type="checkbox" name="feeling-bad">
+                  <span class="form-feeling__item--checkbox-name">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li class="form-feeling__item">
+                <label class="form-feeling__item--checkbox-label">
+                  <input class=" visually-hidden" type="checkbox" name="feeling-unknown">
+                  <span class="form-feeling__item--checkbox-name">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-sight">
+            <legend class="form-sight__titel">Посещенные достопримечательности:</legend>
+            <ul class="form-sight__list">
+              <li class="form-sight__item">
+                <label class="form-sight__item--checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="bridge-devil" checked>
+                  <span class="form-sight__item--checkbox-name">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="form-sight__item">
+                <label class="form-sight__item--checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="mountain-bell" checked>
+                  <span class="form-sight__item--checkbox-name">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="form-sight__item">
+                <label class="form-sight__item--checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="slide-park" checked>
+                  <span class="form-sight__item--checkbox-name">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="form-sight__item">
+                <label class="form-sight__item--checkbox-label">
+                  <input class="visually-hidden" type="checkbox" name="red-rocks">
+                  <span class="form-sight__item--checkbox-name">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-text">
+            <legend class="form-text__titel">Опишите свои эмоции:</legend>
+            <textarea class="form-text__textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+          </fieldset>
+          <button class="form-button" type="submit">Отправить отзыв</button>
+        </form>
+      </aside>
     </main>
   </body>
   <footer page-footer>

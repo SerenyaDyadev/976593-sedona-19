@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Сереня Дядьев](https://up.htmlacademy.ru/adaptive/19/user/976593).
-* Наставник: `Лесухин Александр`.
+* Наставник: [Лесухин Александр](https://htmlacademy.ru/profile/caneklis).
 
 ---
 

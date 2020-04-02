@@ -25,8 +25,8 @@
 
   <body>
     <main class="page-main">
-      <div class="intro">
-        <b class="intro-name">Sedona</b>
+      <div class="page-main__intro">
+        <b class="page-main__intro-name">Sedona</b>
       </div>
       <h1 class="page-header">Фото и видео</h1>
       <p class="page-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и
@@ -34,46 +34,34 @@
       <section class="page-photo">
         <div class="page-photo__wrapper">
           <h2 class="visually-hidden">Фотографии из Седоны</h2>
-          <ul class="photo__list ">
-            <li class="photo__item">
-              <img class="photo__item--image" src="https://via.placeholder.com/280x280" alt="Фото неродные просторы"
-                width="280" height="280">
-              <h3 class="photo__item--title">Неродные просторы</h3>
-              <cite class="photo__item--author-photo">Автор фото: Борис</cite>
-              <div class="photo__item--like-wrapper">
-                <a class="photo__item--like-button">Кнопка лайка</a>
-                <p class="photo__item--like-numbers">1350</p>
-              </div>
+          <ul class="page-photo__list">
+            <li class="page-photo__item">
+              <a class="page-photo__image-link"><img class="page-photo__image" src="https://via.placeholder.com/280x280" alt="Фото неродные просторы"
+                width="280" height="280"></a>
+              <h3 class="page-photo__title">Неродные просторы</h3>
+              <cite class="page-photo__author-photo">Автор фото: Борис</cite>
+              <p class="page-photo__like-numbers">1350</p>
+            </li>
+            <li class="page-photo__item">
+              <a class="page-photo__image-link"><img class="page-photo__image" src="https://via.placeholder.com/280x280"
+                alt="Фото местной растительнос</a>ти" width="280" height="280">
+              <h3 class="page-photo__title">Местная растительность</h3>
+              <cite class="page-photo__author-photo">Автор фото: Сергей</cite>
+                <p class="page-photo__like-numbers">143</p>
+            </li>
+            <li class="page-photo__item">
+              <a class="page-photo__image-link"><img class="page-photo__image" src="https://via.placeholder.com/280x280" alt="Фото дороги на север"
+                width="280" height="280"></a>
+              <h3 class="page-photo__title">Дорога на север</h3>
+              <cite class="page-photo__author-photo">Автор фото: Петр</cite>
+                <p class="page-photo__like-numbers">96</p>
             </li>
             <li class="photo__item">
-              <img class="photo__item--image" src="https://via.placeholder.com/280x280"
-                alt="Фото местной растительности" width="280" height="280">
-              <h3 class="photo__item--title">Местная растительность</h3>
-              <cite class="photo__item--author-photo">Автор фото: Сергей</cite>
-              <div class="photo__item--like-wrapper">
-                <a class="photo__item--like-button">Кнопка лайка</a>
-                <p class="photo__item--like-numbers">143</p>
-              </div>
-            </li>
-            <li class="photo__item">
-              <img class="photo__item--image" src="https://via.placeholder.com/280x280" alt="Фото дороги на север"
-                width="280" height="280">
-              <h3 class="photo__item--title">Дорога на север</h3>
-              <cite class="photo__item--author-photo">Автор фото: Петр</cite>
-              <div class="photo__item--like-wrapper">
-                <a class="photo__item--like-button">Кнопка лайка</a>
-                <p class="photo__item--like-numbers">96</p>
-              </div>
-            </li>
-            <li class="photo__item">
-              <img class="photo__item--image" src="https://via.placeholder.com/280x280" alt="Фото моста дьявола"
-                width="280" height="280">
-              <h3 class="photo__item--title">Мост дьявола</h3>
-              <cite class="photo__item--author-photo">Автор фото: Антон</cite>
-              <div class="photo__item--like-wrapper">
-                <a class="photo__item--like-button">Кнопка лайка</a>
-                <p class="photo__item--like-numbers">254</p>
-              </div>
+              <a class="page-photo__image-link"><img class="photo__image" src="https://via.placeholder.com/280x280" alt="Фото моста дьявола"
+                width="280" height="280"></a>
+              <h3 class="photo__title">Мост дьявола</h3>
+              <cite class="photo__author-photo">Автор фото: Антон</cite>
+                <p class="photo__like-numbers">254</p>
             </li>
           </ul>
         </div>
@@ -85,8 +73,8 @@
           <p class="page-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
             раз!</p>
         </div>
-        <img src="https://via.placeholder.com/321x201" class="page-video" alt="Видео из седоны" width="321" height="201">
-        <img src="https://via.placeholder.com/280x66" class="page-video__control" alt="Управление видео из седоны" width="280" height="66">
+        <img src="https://via.placeholder.com/321x201" class="page-video__video-file" alt="Видео из седоны" width="321" height="201">
+        <img src="https://via.placeholder.com/280x66" class="page-video__video-control" alt="Управление видео из седоны" width="280" height="66">
       </section>
     </main>
   </body>

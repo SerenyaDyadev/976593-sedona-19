@@ -1,10 +1,17 @@
 
 .main-nav {
+  position: relative;
   order:1;
 }
 
 .main-nav__list{
   .list-none();
+  &--opened{
+    display: block;
+  }
+  &--closed{
+    display: none;
+  }
 }
 
 .main-nav__item {
@@ -22,11 +29,37 @@
 .main-nav__link {
   display: block;
   width: 100%;
+  padding: 9px 0 5px 0;
   text-align: center;
   font-weight: 700;
   font-size: 18px;
-  line-height: 55px;
+  line-height: 40px;
   color: #ffffff;
   background-color:@bg-blue;
+}
+
+.nain-nav__toggle {
+  position: absolute;
+  display: block;
+  padding: 0;
+  border: 0;
+  top:18px;
+  right: 20px;
+  font-size: 0;
+  cursor: pointer;
+  &::before {
+    position: absolute;
+    right: 20px;
+  }
+  &--opened{
+    &::before {
+    content: url(../img/icon-cross.svg);
+   }
+  }
+  &--closed{
+    &::before {
+    content: url(../img/icon-menu.svg);
+    }
+  }
 }
 

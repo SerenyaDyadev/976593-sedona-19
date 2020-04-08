@@ -1,0 +1,107 @@
+.advantages__header {
+  display: block;
+  margin: 0 auto;
+  padding: 0 30px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  .list-none();
+  padding-top: 10px;
+}
+
+.advantages__item {
+  text-align: center;
+  background-color: @bg-blue;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.advantages__item-header {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 73px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.advantages__item-number{
+  display: block;
+  padding-top: 5px;
+}
+
+.advantages__item-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding: 12px 30px 41px;
+  line-height: 21px;
+}
+
+.about-advantage__list{
+  display: flex;
+  flex-direction: column;
+  .list-none();
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.about-advantage__list::before {
+  display: block;
+  position: relative;
+  content: "";
+  min-width:320px;
+  min-height: 260px;
+  background-image: url(../img/main-city-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+.about-advantage__item{
+  display: block;
+  position: relative;
+  .outline(red);
+  padding: 0;
+  margin: 0;
+  text-align: left;
+    &--house::before  {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: red;
+  }
+  &--food::before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+  }
+  &--souvenir::before  {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+  }
+}
+
+
+.about-advantage__item-header {
+  display: block;
+  padding: 0;
+  margin: 0;
+
+}
+
+.about-advantage__item-text {
+  display: block;
+  padding: 0;
+  margin: 0;
+}

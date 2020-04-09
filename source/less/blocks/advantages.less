@@ -1,4 +1,30 @@
-.advantages__header {
+
+.adventages__header{
+  display: block;
+  margin: 0 auto;
+  padding:0 30px 28px 30px;
+  min-width: 255px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+    &::before {
+    position: absolute;
+    content: url(../img/bg-intro-triangle-mobile.svg);
+    top: 364px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+    &::after {
+    position: absolute;
+    content: url(../img/bg-triangle.svg);
+    top: 590px;
+    left: 0;
+    z-index: 1;
+  }
+}
+.advantages__reasons {
   display: block;
   margin: 0 auto;
   padding: 0 30px;
@@ -11,7 +37,7 @@
   display: flex;
   flex-direction: column;
   .list-none();
-  padding-top: 10px;
+  padding-top: 8px;
 }
 
 .advantages__list::before {

@@ -1,25 +1,19 @@
 .page-main{
+  position: relative;
+}
+
+.page-main__intro-background {
+  z-index: 0;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
+  & .page-main__intro-background--up{
+    margin-top: -200px;
+  }
 }
 
 .page-main__intro {
   position: relative;
-  padding-bottom: 27px;
-  &::before {
-    position: absolute;
-    content: url(../img/bg-intro-triangle-mobile.svg);
-    top: 364px;
-    width: 100%;
-    z-index: 1;
-  }
-    &::after {
-    position: absolute;
-    content: url(../img/bg-triangle.svg);
-    top: 590px;
-    z-index: 1;
-  }
 }
 
 .intro__text-image {
@@ -27,15 +21,4 @@
   margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 125px;
-}
-
-.page-main_intro-slogan {
-  display: block;
-  margin: 0 auto;
-  padding:0 30px;
-  min-width: 255px;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
-  line-height: 26px;
 }

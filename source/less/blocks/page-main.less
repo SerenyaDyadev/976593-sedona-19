@@ -2,23 +2,30 @@
   position: relative;
 }
 
-.page-main__intro-background {
+.page-main__intro {
+  position: relative;
   z-index: 0;
+  min-height: 350px;
+  background-color: #333333;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top;
-  & .page-main__intro-background--up{
-    margin-top: -200px;
+  &--inner {
+    background-position-y:bottom;
+    min-height: 100px;
   }
+  // background-position: 100px, 20px;
 }
 
-.page-main__intro {
-  position: relative;
-}
 
 .intro__text-image {
   display: block;
   margin: 0 auto;
   padding-top: 90px;
   padding-bottom: 125px;
+}
+
+.intro__text-sedona {
+  display: block;
+  margin: 0 auto;
 }

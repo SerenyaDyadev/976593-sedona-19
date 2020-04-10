@@ -1,4 +1,3 @@
-
 .advantages__list {
   display: flex;
   flex-direction: column;
@@ -7,15 +6,35 @@
 }
 
 .advantages__item {
-  padding-top: 40px;
   text-align: center;
   background-color: @bg-blue;
   color: #ffffff;
+  &--grey {
+    padding-bottom: 20px;
+    background-color: #eeeeee;
+    color: #000000;
+  }
+}
+
+.advantages__border-bottom {
+  position: relative;
+}
+
+.advantages__border-bottom::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  background-color: #333333;
+  z-index: 1;
 }
 
 .advantages__image-left,
 .advantages__image-right {
   display: block;
+  padding-top: 30px;
   width: 100%;
 }
 
@@ -23,9 +42,13 @@
   display: block;
   padding: 0;
   margin: 0;
+  padding-top: 40px;
   padding-bottom: 5px;
   font-size: 18px;
   font-weight: 700;
+  &--grey {
+    padding-top: 27px;
+  }
 }
 
 .advantages__item-number{
@@ -36,42 +59,10 @@
 
 .advantages__item-text {
   margin: 0;
-  padding: 0 30px 40px 30px;
+  padding: 0 30px 10px 30px;
   line-height: 21px;
   font-weight: 400;
-  &--grey {
-    padding-bottom: 25px;
-    padding-right: 32px;
-    padding-left: 32px;
-  }
 }
-
-  // &--image-left{
-  //   position: relative;
-  //   min-height: 452px;
-  //   background-image: url(../img/main-city-mobile@1x.jpg);
-  //   background-repeat: no-repeat;
-  //   background-position-y:190px;
-  // }
-  // &--image-right{
-  //   position: relative;
-  //   min-height: 452px;
-  //   background-image: url(../img/main-bridge-mobile@1x.jpg);
-  //   background-repeat: no-repeat;
-  //   background-position-y: 190px;
-  // }
-  // &--grey {
-  //   padding: 29px 20px 0 20px;
-  //   background-color: #eeeeee;
-  //   color: #000000;
-  // }
-
-.advantages__item--border-bottom {
-    // .outline(red);
-      // margin: 0 20px 0px 20px;
-    border-bottom: 1px solid black;
-  }
-
 
 .about-advantage__list{
   position: relative;

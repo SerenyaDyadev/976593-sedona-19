@@ -46,12 +46,17 @@
   }
   &--index::after {
     position: absolute;
-    content: url(../img/bg-triangle.svg);
-    bottom: -52px;
-    left: 50%;
-    margin-left: -160px;
-    background-color: @bg-blue;
+    display: block;
+    content: "";
+    height: 37px;
+    bottom: -42px;
+    left: 0;
+    right: 0;
     z-index: 1;
+    background-color: @bg-blue;
+    background-image: url(../img/bg-triangle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

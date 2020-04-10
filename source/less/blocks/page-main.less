@@ -15,11 +15,16 @@
   }
   &::after {
     position: absolute;
-    content: url(../img/bg-intro-triangle-mobile.svg);
-    bottom: -10px;
-    left: 50%;
-    margin-left: -160px;
+    display: block;
+    content: "";
+    height: 27px;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
+    background-image: url(../img/bg-intro-triangle-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

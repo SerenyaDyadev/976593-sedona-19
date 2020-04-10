@@ -8,10 +8,11 @@
 
 .advantages__item {
   display: block;
-  padding-top: 40px;
+  padding: 40px;
   text-align: center;
   background-color: @bg-blue;
   color: #ffffff;
+
   &--image-left{
     position: relative;
     min-height: 452px;
@@ -19,34 +20,24 @@
     background-repeat: no-repeat;
     background-position-y:190px;
   }
-    &--image-right{
+  &--image-right{
     position: relative;
     min-height: 452px;
     background-image: url(../img/main-bridge-mobile@1x.jpg);
     background-repeat: no-repeat;
     background-position-y: 190px;
   }
-
-  /*Сложно будет понять вложение ниже?*/
   &--grey {
-    padding-top: 29px;
+    padding: 29px 20px 0 20px;
     background-color: #eeeeee;
-    border-bottom:1px solid #000000;
     color: #000000;
-      & .advantages__item-number {
-        color: #333333;
-      }
-      & .advantages__item-text {
-        padding-bottom: 25px;
-        padding-right: 32px;
-        padding-left: 32px;
-        color: #333333;
-      }
-      &:last-child {
-        border-bottom: none;
-      }
   }
 }
+.advantages__item--border-bottom {
+    // .outline(red);
+      // margin: 0 20px 0px 20px;
+    border-bottom: 1px solid black;
+  }
 
 .advantages__item-header {
   display: block;
@@ -72,13 +63,13 @@
   padding: 0 30px 35px 30px;
   line-height: 21px;
   font-weight: 400;
+  &--grey {
+    padding-bottom: 25px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 }
 
-.advantages__image-right {
-  display: block;
-  margin: 0;
-  padding-top: 12px;
-}
 
 .about-advantage__list{
   position: relative;

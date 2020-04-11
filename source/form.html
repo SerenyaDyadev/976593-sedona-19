@@ -3,15 +3,16 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Фото и видео</title>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Форма отзыва</title>
 </head>
 
 <body>
   <header class="page-header">
-    <a href="index.html" class="page-header__logo"><img src="https://via.placeholder.com/102x83"
-        class="page-header__logo-image" alt="Логотип сайта поиска жилья в Седона" width="102" height="83"></a>
+    <a href="index.html" class="page-header__logo"><img src="img/logo-sedona-mobile.svg" class="page-header__logo-image"
+        alt="Логотип сайта поиска жилья в Седона" width="102" height="83"></a>
     <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
+      <button class="main-nav__toggle main-nav__toggle--opened" type="button">Открыть меню</button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
@@ -25,14 +26,15 @@
 
   <body>
     <main class="page-main">
-      <div class="page-main__intro">
-        <b class="page-main__intro-name">Sedona</b>
-      </div>
-      <h1 class="page-header">Оставьте свой отзыв</h1>
-      <p class="page-text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-        достопримечательностях</p>
+        <h1 class="visually-hidden">Форма отзыва</h1>
+        <div class="page-main__intro page-main__intro--inner">
+          <img src="../img/text-sedona.svg" class="intro__text-sedona" alt="" width="229" height="39">
+        </div>
+        <div class="page-main__header page-main__header--inner">
+          <p class="page-main__title page-main__title--inner">Оставьте свой отзыв</p>
+          <p class="page-main__subtitle page-main__subtitle--inner">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
       <section class="page-form">
-        <h2 class="visually-hidden">Форма отзыва</h2>
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
           <fieldset class="form__name">
             <legend class="form__name-title">Представьтесь:</legend>
@@ -138,14 +140,14 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+              <a class="social__link social__link--twitter" href="https://twitter.com">Мы в Твиттере</a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Мы в
-                Фейсбуке</a>
+                Фейсбуке </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Мы в
+              <a class="social__link social__link--youtube" href="https://www.youtube.com">Мы в
                 Инстаграме</a>
             </li>
           </ul>

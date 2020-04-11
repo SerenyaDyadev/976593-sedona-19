@@ -1,0 +1,125 @@
+.advantages__list {
+  display: flex;
+  flex-direction: column;
+  .list-none();
+  padding-top: 42px;
+}
+
+.advantages__item {
+  text-align: center;
+  background-color: @bg-blue;
+  color: #ffffff;
+  &--grey {
+    padding-bottom: 20px;
+    background-color: #eeeeee;
+    color: #000000;
+  }
+}
+
+.advantages__border-bottom {
+  position: relative;
+}
+
+.advantages__border-bottom::after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  bottom: 0;
+  left: 20px;
+  right: 20px;
+  background-color: #333333;
+  z-index: 1;
+}
+
+.advantages__image-left,
+.advantages__image-right {
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+}
+
+.advantages__item-header {
+  display: block;
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 5px;
+  font-size: 18px;
+  font-weight: 700;
+  &--grey {
+    padding-top: 27px;
+  }
+}
+
+.advantages__item-number{
+  display: block;
+  padding-bottom: 12px;
+  font-weight: 400;
+}
+
+.advantages__item-text {
+  margin: 0;
+  padding: 0 30px 10px 30px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.about-advantage__list{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .list-none();
+  margin: 0 auto;
+  padding: 25px 20px 20px 70px;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 0;
+}
+
+.about-advantage__item{
+  position: relative;
+  padding: 10px 0;
+  min-height: 110px;
+  text-align: left;
+    &--house::before  {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+  }
+  &--food::before {
+    position: absolute;
+    content: "";
+    top: 0px;
+    left: -35px;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+  }
+  &--souvenir::before  {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -35px;;
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+  }
+}
+
+.about-advantage__item-header {
+  display: block;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about-advantage__item-text {
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 20px;
+}

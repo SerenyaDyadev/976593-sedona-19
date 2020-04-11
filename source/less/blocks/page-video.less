@@ -1,5 +1,7 @@
 .page-video {
+  margin: 0 auto;
   padding-top: 11px;
+  padding-bottom: 125px;
 }
 
 .page-video__title {
@@ -21,19 +23,53 @@
 
 .page-video__control-wrapper {
   position: relative;
-  
 }
 
 .page-video__video-file {
   display: block;
-  position: relative;
   width: 100%;
   height: auto;
+  z-index: 0;
+}
 
-  // &::after {
-  //   position: absolute;
-  //   content: " ";
-  //   width: 280px;
-  //   height: 66px;
-  // }
+.page-video__slider {
+  position: absolute;
+  z-index: 1;
+  width: 280px;
+  height: 45px;
+  background-color: black;
+  left: 20px;
+  right: 20px;
+  bottom: -15px;
+  opacity: 0.4;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 280px;
+    height: 66px;
+    background-color: #f2f2f2;
+    bottom: -65px;
+  }
+}
+
+.page-video__replay {
+  position: absolute;
+  z-index: 2;
+  left: 45px;
+  bottom: -57px;
+}
+
+.page-video__subtitles {
+  position: absolute;
+  z-index: 2;
+  right: 94px;
+  bottom: -57px;
+}
+
+.page-video__fullscreen {
+  position: absolute;
+  z-index: 2;
+  right: 43px;
+  bottom: -57px;
 }

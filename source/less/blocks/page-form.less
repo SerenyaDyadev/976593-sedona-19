@@ -4,23 +4,28 @@
 
 .form {
   margin: 0 auto;
+  .list-none();
+  // border-top: 1px solid #333333;
 }
 
-.form__name,
-.form__contacts,
-.form__feeling,
-.form__sight,
-.form__text {
-  border: none;
-}
-
-.form__name-list,
-.form__contacts-list,
-.form__feeling-list,
-.form__sight-list,
-.form__text-list {
+.form ul {
   .list-none();
 }
+
+.form legend {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+// .form__name-list,
+// .form__contacts-list,
+// .form__feeling-list,
+// .form__sight-list,
+// .form__text-list {
+//   .list-none();
+// }
 
 .form-button {
   margin: 0 auto;

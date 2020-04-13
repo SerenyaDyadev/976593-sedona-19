@@ -28,7 +28,7 @@
     <main class="page-main">
         <h1 class="visually-hidden">Форма отзыва</h1>
         <div class="page-main__intro page-main__intro--inner">
-          <img src="../img/text-sedona.svg" class="intro__text-sedona" alt="" width="229" height="39">
+          <img src="img/text-sedona.svg" class="intro__text-sedona" alt="" width="229" height="39">
         </div>
         <div class="page-main__header page-main__header--inner">
           <p class="page-main__title page-main__title--inner">Оставьте свой отзыв</p>
@@ -60,14 +60,12 @@
             <legend class="form__contacts-title">Контактная информация:</legend>
             <ul class="form__contacts-list">
               <li class="form__contacts-item">
-                <label class="form__contacts-label">Контактный телефон<sup>*</sup>:
-                  <input class="form__contacts-input" type="tel" name="phone" placeholder="Введите телефон">
-                </label>
+                <label for="phone" class="form__contacts-label">Контактный телефон<sup>*</sup>:</label>
+                  <input id="phone" class="form__contacts-input form__contacts-input--phone" type="tel" name="phone" placeholder="Введите телефон">
               </li>
               <li class="form__contacts-item">
-                <label class="form__contacts-label">Электронная почта<sup>*</sup>:
-                  <input class="form__contacts-input" type="email" name="email" placeholder="Введите e-mail">
-                </label>
+                <label for="email" class="form__contacts-label">Электронная почта<sup>*</sup>:</label>
+                  <input id="email" class="form__contacts-input form__contacts-input--email" type="email" name="email" placeholder="Введите e-mail">
               </li>
             </ul>
           </fieldset>

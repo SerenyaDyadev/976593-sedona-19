@@ -9,6 +9,7 @@
   text-align: center;
   background-color: @bg-blue;
   color: #ffffff;
+
   &--grey {
     padding-bottom: 20px;
     background-color: #eeeeee;
@@ -46,12 +47,13 @@
   padding-bottom: 5px;
   font-size: 18px;
   font-weight: 700;
+
   &--grey {
     padding-top: 27px;
   }
 }
 
-.advantages__item-number{
+.advantages__item-number {
   display: block;
   padding-bottom: 12px;
   font-weight: 400;
@@ -64,7 +66,7 @@
   font-weight: 400;
 }
 
-.about-advantage__list{
+.about-advantage__list {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -76,12 +78,13 @@
   z-index: 0;
 }
 
-.about-advantage__item{
+.about-advantage__item {
   position: relative;
   padding: 10px 0;
   min-height: 110px;
   text-align: left;
-    &--house::before  {
+
+  &--house::before {
     position: absolute;
     content: "";
     top: 0;
@@ -90,20 +93,22 @@
     height: 20px;
     background-color: red;
   }
+
   &--food::before {
     position: absolute;
     content: "";
-    top: 0px;
+    top: 0;
     left: -35px;
     width: 20px;
     height: 20px;
     background-color: blue;
   }
-  &--souvenir::before  {
+
+  &--souvenir::before {
     position: absolute;
     content: "";
     top: 0;
-    left: -35px;;
+    left: -35px;
     width: 20px;
     height: 20px;
     background-color: yellow;

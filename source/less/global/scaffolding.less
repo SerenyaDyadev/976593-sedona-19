@@ -4,7 +4,7 @@ html {
 
 *,
 *::before,
-*::after{
+*::after {
   box-sizing: inherit;
 }
 
@@ -14,10 +14,10 @@ body {
   padding: 0;
   font-size: 14px;
   font-weight: 400;
-  font-family: "PT Sans","Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   line-height: 26px;
   color: #333333;
-  background-color:@bg-white;
+  background-color: @bg-white;
   text-transform: uppercase;
 }
 
@@ -30,7 +30,13 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active), input[type=checkbox].visually-hidden, input[type=radio].visually-hidden {
+fieldset {
+  border: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input [type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -38,9 +44,7 @@ a {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
-  overflow: hidden
+  overflow: hidden;
 }
-

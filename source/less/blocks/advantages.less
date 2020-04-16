@@ -129,8 +129,33 @@
   line-height: 20px;
 }
 
-@media (min-width:@tablet-width) {
+@media @tablet-width {
+  .advantages__list {
+    // display: flex;
+    // flex-direction: column;
+    padding-top: 50px;
+    // .outline(red)
+  }
 
+.advantages__item {
+  display: flex;
+  height: 256px;
+//   text-align: center;
+//   background-color: @bg-blue;
+//   color: #ffffff;
+
+//   &--grey {
+//     padding-bottom: 20px;
+//     background-color: #eeeeee;
+//     color: #000000;
+//   }
+// }
 }
 
-@media (min-width:@desktop-width) {}
+.advantages_item-wrapper {
+  display: block;
+  min-width: 256px;
+}
+
+}
+// @media (min-width:@desktop-width) {}

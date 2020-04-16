@@ -9,9 +9,11 @@ html {
 }
 
 body {
-  width: 1280px;
+  // width:340px;
+  // width: @desktop-width;
+  width: 808px;
   margin: 0 auto;
-  padding: 0;
+  padding: 0 10px;
   font-size: 14px;
   font-weight: 400;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -49,9 +51,14 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
+@media (min-width:@tablet-width) {
+  body {
+    padding: 0 20px;
+  }
+}
 
-// @media (min-width:@tablet-width) {
-// body {
-//   width: @tablet-width;
-// }
-// }
+@media (min-width:@desktop-width) {
+  body {
+    padding: 0 40px;
+  }
+}

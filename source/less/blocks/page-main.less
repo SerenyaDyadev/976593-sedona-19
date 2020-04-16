@@ -90,3 +90,69 @@
     line-height: 25px;
   }
 }
+
+@media (min-width:@tablet-width) {
+  .page-main__intro {
+    z-index: -1;
+    position: relative;
+    min-height: 518px;
+    padding-top: 77px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+//   &--inner {
+//     min-height: 160px;
+//     padding-top: 51px;
+//     background-position-y: bottom;
+//   }
+
+    &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+  }
+
+.page-main__header {
+  padding-top: 54px;
+  .outline(red);
+
+  // &--inner {
+  //   padding-top: 35px;
+  // }
+
+  &--index::after {
+    display: none;
+    }
+  }
+
+  .page-main__title {
+    padding: 0 75px 29px 75px;
+    font-size: 21px;
+
+  // &--inner {
+  //   padding: 0 30px 22px 30;
+  // }
+  }
+
+
+  .page-main__subtitle {
+    padding: 0;
+
+  // &--inner {
+  //   padding: 0 22px;
+  //   line-height: 25px;
+  // }
+  }
+}
+
+@media (min-width:@desktop-width) {
+  .page-main__intro {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    &::after {
+    background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+}

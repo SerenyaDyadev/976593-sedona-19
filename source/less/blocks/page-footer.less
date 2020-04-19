@@ -26,13 +26,6 @@
   padding: 0;
 }
 
-.page-footer__phone {
-  display: none;
-  padding: 0;
-  margin: 0;
-  border: none;
-}
-
 .page-footer__social {
   padding: 36px 0 43px 0;
 }
@@ -77,6 +70,7 @@
 
 .copyright {
   display: flex;
+  align-items: center;
 }
 
 .copyright__text {
@@ -84,5 +78,40 @@
 }
 
 .copyright__link {
+  padding-left: 10px;
+  background-color: #ffffff;
   content: url("../img/logo-htmlacademy.svg");
+}
+
+@media @tablet-width {
+  .page-footer__wrapper {
+    padding-top: 19px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .page-footer__contacts {
+    padding: 0;
+  }
+
+  .page-footer__social {
+    padding: 0 13.5% 0 15%;
+  }
+
+  .social__link {
+    width: 46px;
+    height: 46px;
+    background-color: @bg-blue;
+  }
+}
+
+@media @desktop-width {
+  .page-footer__wrapper {
+    padding-top: 25px;
+  }
+
+  .page-footer__social {
+    padding: 0 21% 0 23%;
+  }
 }

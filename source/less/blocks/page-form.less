@@ -1,4 +1,5 @@
 .page-form {
+  position: relative;
   display: block;
   margin: 0 auto;
   padding-top: 15px;
@@ -9,7 +10,10 @@
   border-top: 1px solid #333333;
 }
 
-.form ul {
+.form__name-list,
+.form__contacts-list,
+.form__feeling-list,
+.form__sight-list {
   display: flex;
   flex-direction: column;
   .list-none();
@@ -17,7 +21,6 @@
 
 .form legend {
   display: block;
-  text-align: center;
   font-size: 18px;
   font-weight: 700;
 }
@@ -29,6 +32,7 @@
 }
 
 .form__name-title {
+  text-align: center;
   padding-top: 16px;
   padding-bottom: 23px;
 }
@@ -66,12 +70,14 @@
 }
 
 .form__contacts-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 10px;
 }
 
 .form__contacts-title {
+  text-align: center;
   padding-top: 16px;
   padding-bottom: 17px;
 }
@@ -103,12 +109,14 @@
 }
 
 .form__feeling-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 43px;
 }
 
 .form__feeling-title {
+  text-align: center;
   padding-top: 18px;
   padding-bottom: 38px;
 }
@@ -119,6 +127,7 @@
   padding-left: 80px;
   font-size: 18px;
   text-transform: none;
+  font-weight: 700;
 }
 
 .form__sight {
@@ -128,6 +137,7 @@
 }
 
 .form__sight-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding-bottom: 54px;
@@ -138,6 +148,7 @@
 }
 
 .form__sight-title {
+  text-align: center;
   padding-top: 18px;
   padding-bottom: 31px;
 }
@@ -148,6 +159,7 @@
   padding-left: 80px;
   font-size: 18px;
   text-transform: none;
+  font-weight: 700;
 }
 
 .form__text {
@@ -156,6 +168,7 @@
 }
 
 .form__text-title {
+  text-align: center;
   padding-top: 18px;
   padding-bottom: 18px;
 }
@@ -174,6 +187,7 @@
   padding-top: 14px;
   font-size: 18px;
   line-height: 26px;
+  font-weight: 700;
 }
 
 .form-button {
@@ -181,4 +195,251 @@
   padding-left: 50px;
   padding-right: 50px;
   margin-bottom: 50px;
+}
+
+@media @tablet-width {
+  .page-form {
+    padding: 53px 40px 0;
+
+    &::after {
+      position: absolute;
+      content: "* -  Обязательные поля";
+      bottom: 80px;
+      right: 70px;
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    border: none;
+  }
+
+  .form legend {
+    font-size: 21px;
+  }
+
+  .form__feeling {
+    width: 50%;
+    order: -1;
+    border: none;
+    border-right: 1px solid #000000;
+  }
+
+  .form__feeling-title {
+    text-align: left;
+    padding: 18px 0 70px 0;
+  }
+
+  .form__feeling-item {
+    padding-bottom: 53px;
+  }
+
+  .form__feeling-label {
+    padding-left: 75px;
+  }
+
+  .form__name {
+    width: 50%;
+    padding: 0 20px 31px;
+    border: none;
+  }
+
+  .form__name-title {
+    text-align: left;
+    padding: 18px 0 57px 40px;
+  }
+
+  .form__name-item {
+    padding: 0 0 19px 39px;
+  }
+
+  .form__name-input::placeholder {
+    font-size: 15px;
+  }
+
+  .form__contacts {
+    width: 100%;
+    border: none;
+    border-top: 1px solid #000000;
+  }
+
+  .form__contacts-title {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 20px;
+  }
+
+  .form__contacts-item {
+    padding-bottom: 19px;
+  }
+
+  .form__contacts-input::placeholder {
+    font-size: 16px;
+  }
+
+  .form__sight {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 40px 0;
+    border: none;
+    border-top: 1px solid #000000;
+  }
+
+  .form__sight-title {
+    text-align: center;
+    margin-left: 140px;
+    margin-right: 140px;
+    padding: 18px 0 31px;
+  }
+
+  .form__sight-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__sight-item {
+    min-width: 260px;
+    padding: 23px 0 40px 74px;
+}
+
+  .form__text {
+    width: 100%;
+    padding: 0 20px 60px;
+    border-top: 1px solid #000000;
+  }
+
+  .form__text-title {
+    text-align: center;
+    padding: 45px 40px 55px;
+  }
+
+  .form__text-textarea::placeholder {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+
+  .form-button {
+    margin-left: 20px;
+    padding-left: 58px;
+    padding-right: 58px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+  }
+}
+
+@media @desktop-width {
+  .page-form {
+    padding: 53px 120px 0;
+
+    &::after {
+      position: absolute;
+      content: "* -  Обязательные поля";
+      bottom: 80px;
+      right: 70px;
+    }
+  }
+
+  .form__feeling-title {
+    padding: 3px 0 70px 59px;
+  }
+
+  .form__feeling-item {
+    padding-bottom: 53px;
+  }
+
+  .form__feeling-label {
+    padding-left: 60px;
+  }
+
+  .form__name {
+    padding: 0 40px 30px;
+  }
+
+  .form__name-title {
+    padding: 3px 0 57px 40px;
+  }
+
+  .form__contacts {
+    padding: 0;
+  }
+
+  .form__contacts-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .form__contacts-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    padding-top: 49px;
+    padding-bottom: 40px;
+  }
+
+  .contact-word {
+    display: none;
+  }
+
+  .form__contacts-label{
+    padding: 0;
+    padding-right: 15px;
+  }
+
+  .form__contacts-input {
+    width: 315px;
+  }
+
+  .form__contacts-input::placeholder {
+    font-size: 16px;
+  }
+
+  .form__sight {
+    padding: 0;
+  }
+
+  .form__sight-title {
+    padding: 15px 140px 31px;
+  }
+
+  .form__sight-list {
+    padding: 0;
+  }
+
+  .form__sight-item {
+    padding: 0;
+    margin: 0;
+    width: 25%;
+    padding-top: 23px;
+  }
+  .form__sight-label {
+    .b;
+    padding: 0;
+  }
+
+  .form__text {
+    width: 100%;
+    padding: 0 20px 60px;
+    border-top: 1px solid #000000;
+  }
+
+  .form__text-title {
+    text-align: center;
+    padding: 45px 40px 55px;
+  }
+
+  .form__text-textarea::placeholder {
+    padding-top: 16px;
+    font-size: 16px;
+  }
+
+  .form-button {
+    padding-left: 58px;
+    padding-right: 58px;
+    margin-bottom: 70px;
+    text-transform: uppercase;
+  }
 }

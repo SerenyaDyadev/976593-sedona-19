@@ -18,3 +18,28 @@
   max-width: 102px;
   height: auto;
 }
+
+@media @tablet-width {
+  .page-header {
+    position: relative;
+    margin: 0;
+  }
+
+  .page-header__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -51px;
+  }
+}
+
+@media @desktop-width {
+  .page-header__logo-image {
+    margin: 0 auto;
+    width: 188px;
+  }
+
+  .page-header__logo {
+    margin-left: -94px;
+  }
+}

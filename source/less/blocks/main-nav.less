@@ -68,3 +68,43 @@
     }
   }
 }
+
+
+@media @tablet-width {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__wrapper {
+    display: flex;
+    margin-top: 0;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .main-nav__item {
+    display: flex;
+    flex-grow: 1;
+    border-bottom: none;
+
+    &:nth-child(2) {
+    margin-right: 156px;
+  }
+}
+
+  .main-nav__link {
+    padding: 6px 0;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 14px;
+  }
+}
+
+@media @desktop-width {
+  .main-nav__item:nth-child(2) {
+    margin-right: 244px;
+  }
+}

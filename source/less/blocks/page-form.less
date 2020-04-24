@@ -14,8 +14,6 @@
 .form__contacts-list,
 .form__feeling-list,
 .form__sight-list {
-  display: flex;
-  flex-direction: column;
   .list-none();
 }
 
@@ -27,7 +25,7 @@
 
 .form__name {
   margin: 0;
-  padding: 0 20px 5px;
+  padding: 0 10px 5px;
   border-bottom: 1px solid #333333;
 }
 
@@ -39,7 +37,7 @@
 
 .form__name-item {
   display: flex;
-  padding-bottom: 19px;
+  padding-bottom: 16px;
 }
 
 .form__name-label {
@@ -55,17 +53,26 @@
   padding: 23px;
   background-color: #f2f2f2;
   border: none;
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:focus {
+    border: 4px solid #e5e5e5;
+    background-color: #ffffff;
+  }
 }
 
 .form__name-input::placeholder {
   color: #000000;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .form__contacts {
   margin: 0 auto;
-  padding: 0 20px 20px;
+  padding-bottom: 20px;
   border-bottom: 1px solid #333333;
 }
 
@@ -78,93 +85,165 @@
 
 .form__contacts-title {
   text-align: center;
-  padding-top: 16px;
-  padding-bottom: 17px;
+  padding-top: 17px;
+  padding-bottom: 13px;
 }
 
 .form__contacts-label {
   display: block;
-  padding-left: 21px;
+  padding-left: 22px;
 }
 
 .form__contacts-input {
   position: relative;
   display: block;
-  margin-top: 10px;
-  padding: 20px;
+  margin-top: 8px;
+  padding: 20px ;
   background-color: #f2f2f2;
   border: none;
+
+  &--phone {
+    background-image: url("../img/icon-phone.svg");
+    background-position: 245px center;
+    background-repeat: no-repeat;
+  }
+
+  &--email {
+    background-image: url("../img/icon-mail.svg");
+    background-position: 245px center;
+    background-repeat: no-repeat;
+  }
 }
 
 .form__contacts-input::placeholder {
   color: #000000;
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .form__feeling {
+  display: block;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 10px;
+  padding-top: 17px;
   border-bottom: 1px solid #333333;
+}
+
+.form__feeling-title {
+  display: inline-block;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.form__feeling-list {
+  display: block;
 }
 
 .form__feeling-item {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-bottom: 43px;
+  padding-bottom: 42px;
 }
 
-.form__feeling-title {
-  text-align: center;
-  padding-top: 18px;
-  padding-bottom: 38px;
-}
-
-.form__feeling-label {
-  display: block;
+.form__feeling-name {
+  display: inline-block;
   position: relative;
+  vertical-align: middle;
   padding-left: 80px;
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
+  cursor: pointer;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -16px;
+    left: 2px;
+    border: 28px solid #f2f2f2;
+    border-radius: 50%;
+  }
+
+    &::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    left: 19px;
+    border: 11px solid #333333;
+    border-radius: 50%;
+  }
+}
+
+.form__feeling-label:hover + .form__feeling-name::before {
+  border-color: #e5e5e5;
 }
 
 .form__sight {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 10px;
   border-bottom: 1px solid #333333;
-}
-
-.form__sight-item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 54px;
-
-  &:last-child {
-    padding-bottom: 40px;
-  }
 }
 
 .form__sight-title {
   text-align: center;
-  padding-top: 18px;
-  padding-bottom: 31px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.form__sight-label {
+.form__sight-list {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+.form__sight-item {
+  position: relative;
+  display: block;
+  padding-bottom: 54px;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+// .form__sight-label {
+//   display: block;
+//   position: relative;
+//   padding-left: 80px;
+//   font-size: 18px;
+//   text-transform: none;
+//   font-weight: 700;
+// }
+.form__sight-name {
   display: block;
   position: relative;
   padding-left: 80px;
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    top: -16px;
+    left: 2px;
+    border: 28px solid #f2f2f2;
+    border-radius: 5px;
+  }
 }
 
 .form__text {
   margin: 0 auto;
-  padding: 0 20px 50px;
+  padding: 0 10px 50px;
 }
 
 .form__text-title {
@@ -424,6 +503,6 @@
     margin: 0;
     padding-left: 137px;
     padding-right: 137px;
-    margin-bottom: 70px;
+    // margin-bottom: 65px;
   }
 }

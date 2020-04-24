@@ -39,8 +39,8 @@
   display: block;
   padding: 0;
   border: 0;
-  top: 22px;
-  right: 20px;
+  top: 17px;
+  right: 21px;
   font-size: 0;
   cursor: pointer;
   background-color: @bg-blue;
@@ -98,19 +98,15 @@
     display: none;
   }
 
-  .main-nav__wrapper {
-    display: flex;
-    margin-top: 0;
-  }
-
   .main-nav__list {
     display: flex;
-    flex-grow: 1;
+    justify-content: center;
   }
 
   .main-nav__item {
-    display: flex;
+    display: block;
     flex-grow: 1;
+    min-width: 156px;
     border-bottom: none;
 
     &:nth-child(2) {
@@ -119,7 +115,6 @@
   }
 
   .main-nav__link {
-    padding: 6px 0;
     background-color: #ffffff;
     color: #000000;
     font-size: 14px;
@@ -161,7 +156,12 @@
 }
 
 @media @desktop-width {
-  .main-nav__item:nth-child(2) {
-    margin-right: 244px;
+  .main-nav__item {
+    min-width: 239px;
+
+    &:nth-child(2) {
+      margin-right: 244px;
+    }
   }
+
 }

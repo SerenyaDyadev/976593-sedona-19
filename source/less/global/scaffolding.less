@@ -9,6 +9,7 @@ html {
 }
 
 body {
+  margin: 0;
   padding: 0;
   font-size: 14px;
   font-weight: 400;
@@ -20,28 +21,24 @@ body {
 }
 
 .container {
-  // min-width: 320px;
-  // max-width: 767px;
-  // max-width: @desktop-width;
-  // width: 808px;
+  min-width: 320px;
   margin: 0 auto;
   padding: 0;
   // box-shadow: 0 0 5px 5px #000000;
 
   @media @tablet-width {
-    width: 768px;
-    // min-width: 768px;
-    // max-width: 1024px;
+    min-width: 768px;
+    max-width: 1024px;
   }
 
   @media @desktop-width {
-    width: 1200px;
-    // min-width: 1200px;
+    min-width: 1024px;
+    max-width: 1200px;
   }
 }
 
 img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
 }
 
@@ -67,6 +64,31 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.button {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  color: #ffffff;
+  background-color: @bg-blue;
+  font-size: 21px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color:#76abca;
+    background-color: #5496bd;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
 
 @media (min-width: @tablet-width) {
   body {

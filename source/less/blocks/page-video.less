@@ -26,8 +26,10 @@
 
 .page-video__video-file {
   display: block;
-  width: 100%;
-  height: auto;
+  margin: 0 auto;
+  width: auto;
+  ///vremenno
+  height: 201px;
   z-index: 0;
 }
 
@@ -37,8 +39,8 @@
   width: 280px;
   height: 45px;
   background-color: black;
-  left: 20px;
-  right: 20px;
+  left: 50%;
+  margin-left: -140px;
   bottom: -15px;
   opacity: 0.4;
 
@@ -91,17 +93,18 @@
   }
 
   .page-video__video-file {
-    width: 100%;
+    width: 648px;
     min-height: 504px;
   }
 
   .page-video__slider {
     position: absolute;
     padding: 0 60px;
-    width: 100%;
+    width: 648px;
     height: 95px;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    margin-left: -324px;
     background-color: #000000;
     opacity: 0.6;
 
@@ -129,6 +132,16 @@
 @media @desktop-width {
   .page-video {
     padding: 7px 200px 85px;
+  }
+
+  .page-video__video-file {
+    width: 800px;
+    min-height: 500px;
+  }
+
+  .page-video__slider {
+    width: 800px;
+    margin-left: -400px;
   }
 
   .page-video__text {

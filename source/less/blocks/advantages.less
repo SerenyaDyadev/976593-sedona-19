@@ -147,6 +147,7 @@
   }
 
   .advantages__item-header {
+    .y;
     padding: 45px 53px 7px;
     font-size: 21px;
   }
@@ -232,7 +233,9 @@
   //// vremenno
   .advantages__image-left,
   .advantages__image-right {
-    display: none;
+    // display: none;
+    margin-bottom: -50px;
+    object-fit: inherit;
   }
 
   .advantages__item {
@@ -258,4 +261,34 @@
   .advantages__item-text {
     padding: 0 65px 59px;
   }
+
+  /*
+  .advantages__image-left,
+  .advantages__image-right {
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+   // vremenno
+  height: 260px;
+}
+
+  .advantages__image-left {
+    padding: 0;
+    width: 66.7%;
+    order: -1;
+    //vremenno
+    object-fit: cover;
+    height: 256px;
+    ///
+  }
+
+  .advantages__image-right {
+    padding: 0;
+    width: 66.7%;
+    //vremmenno
+    object-fit: cover;
+    height: 256px;
+    ///
+  }
+  */
 }

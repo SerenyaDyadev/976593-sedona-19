@@ -11,8 +11,14 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <a class="page-header__logo"><img src="img/logo-sedona-mobile.svg" class="page-header__logo-image"
-          alt="Логотип сайта поиска жилья в Седона" width="102" height="83"></a>
+      <a class="page-header__logo">
+        <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+        <img src="img/logo-sedona-mobile.svg" class="page-header__logo-image"
+          alt="Логотип сайта поиска жилья в Седона" width="102" height="83">
+        </picture>
+        </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button"> <svg
             class="main-nav__toggle-cross main-nav__toggle-cross--active" version="1.0" id="Layer_1"

@@ -11,8 +11,14 @@
 <body>
   <div class="container">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo"><img src="img/logo-sedona-mobile.svg"
-          class="page-header__logo-image" alt="Логотип сайта поиска жилья в Седона" width="102" height="83"></a>
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" class="page-header__logo-image"
+            alt="Логотип сайта поиска жилья в Седона" width="102" height="83">
+        </picture>
+      </a>
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button"> <svg
             class="main-nav__toggle-cross main-nav__toggle-cross--active" version="1.0" id="Layer_1"
@@ -83,73 +89,73 @@
                 <li class="form__contacts-item form__contacts-item--phone">
                   <label for="phone" class="form__contacts-label"><span class="contact-word">Контактный</span>
                     телефон<sup>*</sup>:</label>
-                  <input id="phone" class="form__contacts-input" type="tel" name="phone"
-                    placeholder="Введите телефон">
+                  <input id="phone" class="form__contacts-input" type="tel" name="phone" placeholder="Введите телефон">
                 </li>
                 <li class="form__contacts-item form__contacts-item--mail">
                   <label for="email" class="form__contacts-label">Электронная почта<sup>*</sup>:</label>
-                  <input id="email" class="form__contacts-input" type="email" name="email"
-                    placeholder="Введите e-mail">
+                  <input id="email" class="form__contacts-input" type="email" name="email" placeholder="Введите e-mail">
                 </li>
               </ul>
-            </fieldset>
-            <fieldset class="form__feeling">
-              <legend class="form__feeling-title">Ваше общее впечатление:</legend>
-              <ul class="form__feeling-list">
-                <li class="form__feeling-item">
-                  <label class="form__feeling-label">
-                    <input class="visually-hidden form__feeling-input" type="checkbox" name="feeling-good" checked>
-                    <span class="form__feeling-name">Скорее положительное</span>
-                  </label>
-                </li>
-                <li class="form__feeling-item">
-                  <label class="form__feeling-label">
-                    <input class="visually-hidden form__feeling-input" type="checkbox" name="feeling-bad">
-                    <span class="form__feeling-name">Скорее отрицательное</span>
-                  </label>
-                </li>
-                <li class="form__feeling-item">
-                  <label class="form__feeling-label">
-                    <input class="visually-hidden form__feeling-input" type="checkbox" name="feeling-unknown">
-                    <span class="form__feeling-name">Затрудняюсь ответить</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__sight">
-              <legend class="form__sight-title">Посещенные достопримечательности:</legend>
-              <ul class="form__sight-list">
-                <li class="form__sight-item">
-                  <label class="form__sight-label">
-                    <input class="visually-hidden form__sight-input" type="checkbox" name="bridge-devil" checked>
-                    <span class="form__sight-name">Мост Дьявола</span>
-                  </label>
-                </li>
-                <li class="form__sight-item">
-                  <label class="form__sight-label">
-                    <input class="visually-hidden form__sight-input" type="checkbox" name="mountain-bell" checked>
-                    <span class="form__sight-name">Гора-Колокол</span>
-                  </label>
-                </li>
-                <li class="form__sight-item">
-                  <label class="form__sight-label">
-                    <input class="visually-hidden form__sight-input" type="checkbox" name="slide-park" checked>
-                    <span class="form__sight-name">Слайд-парк</span>
-                  </label>
-                </li>
-                <li class="form__sight-item">
-                  <label class="form__sight-label">
-                    <input class="visually-hidden form__sight-input" type="checkbox" name="red-rocks">
-                    <span class="form__sight-name">Красные скалы</span>
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset class="form__text">
-              <legend class="form__text-title">Опишите свои эмоции:</legend>
-              <textarea class="form__text-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
-            </fieldset>
-            <button class="form-button button" type="submit">Отправить отзыв</button>
+              <fieldset class="form__feeling">
+                <legend class="form__feeling-title">Ваше общее впечатление:</legend>
+                <ul class="form__feeling-list">
+                  <li class="form__feeling-item">
+                    <label class="form__feeling-label">
+                      <input class="visually-hidden form__feeling-input" type="radio" name="feeling-radio"
+                        value="feeling-good" checked>
+                      <span class="form__feeling-name">Скорее положительное</span>
+                    </label>
+                  </li>
+                  <li class="form__feeling-item">
+                    <label class="form__feeling-label">
+                      <input class="visually-hidden form__feeling-input" type="radio" name="feeling-radio"
+                        value="feeling-bad">
+                      <span class="form__feeling-name">Скорее отрицательное</span>
+                    </label>
+                  </li>
+                  <li class="form__feeling-item">
+                    <label class="form__feeling-label">
+                      <input class="visually-hidden form__feeling-input" type="radio" name="feeling-radio"
+                        value="feeling-unknown">
+                      <span class="form__feeling-name">Затрудняюсь ответить</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__sight">
+                <legend class="form__sight-title">Посещенные достопримечательности:</legend>
+                <ul class="form__sight-list">
+                  <li class="form__sight-item">
+                    <label class="form__sight-label">
+                      <input class="visually-hidden form__sight-input" type="checkbox" name="bridge-devil" checked>
+                      <span class="form__sight-name">Мост Дьявола</span>
+                    </label>
+                  </li>
+                  <li class="form__sight-item">
+                    <label class="form__sight-label">
+                      <input class="visually-hidden form__sight-input" type="checkbox" name="mountain-bell" checked>
+                      <span class="form__sight-name">Гора-Колокол</span>
+                    </label>
+                  </li>
+                  <li class="form__sight-item">
+                    <label class="form__sight-label">
+                      <input class="visually-hidden form__sight-input" type="checkbox" name="slide-park" checked>
+                      <span class="form__sight-name">Слайд-парк</span>
+                    </label>
+                  </li>
+                  <li class="form__sight-item">
+                    <label class="form__sight-label">
+                      <input class="visually-hidden form__sight-input" type="checkbox" name="red-rocks">
+                      <span class="form__sight-name">Красные скалы</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset class="form__text">
+                <legend class="form__text-title">Опишите свои эмоции:</legend>
+                <textarea class="form__text-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+              </fieldset>
+              <button class="form-button button" type="submit">Отправить отзыв</button>
           </form>
         </section>
       </main>

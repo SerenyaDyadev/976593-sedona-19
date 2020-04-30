@@ -52,7 +52,7 @@
       <main class="page-main">
         <h1 class="visually-hidden">Фото и видео из седоны</h1>
         <div class="page-main__intro page-main__intro--inner">
-          <img src="../img/text-sedona.svg" class="intro__text-sedona" alt="" width="229" height="39">
+          <img src="img/text-sedona.svg" class="intro__text-sedona" alt="" width="229" height="39">
         </div>
         <div class="page-main__header page-main__header--inner">
           <p class="page-main__title page-main__title--inner">Фото и видео</p>
@@ -65,9 +65,16 @@
             <ul class="page-photo__list">
               <li class="page-photo__item page-photo__item--wide">
                 <div class="page-photo__item-wrapper page-photo__item-wrapper--wide">
-                  <a class="page-photo__image-link page-photo__image-link--wide"><img
-                      class="page-photo__image page-photo__image--wide" src="../img/photo-sunset-mobile@1x.jpg"
-                      alt="Фото дороги" width="280" height="280"></a>
+                  <a class="page-photo__image-link page-photo__image-link--wide">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photo-sunset-tablet1@x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                      <img class="page-photo__image page-photo__image--wide" src="img/photo-sunset-mobile1@x.jpg"
+                        srcset="img/photo-sunset-mobile@2x.jpg 2x" alt="Фото заката" width="280" height="280">
+                    </picture>
+                  </a>
                   <div class="page-photo__wrapper-footer">
                     <h3 class="page-photo__title">Неродные просторы</h3>
                     <cite class="page-photo__author-photo">Автор фото: Борис</cite>
@@ -77,9 +84,17 @@
               </li>
               <li class="page-photo__item">
                 <div class="page-photo__item-wrapper">
-                  <a class="page-photo__image-link"><img class="page-photo__image"
-                      src="../img/photo-cactus-mobile@1x.jpg" alt="Фото местной растительности" width="280"
-                      height="280"></a>
+                  <a class="page-photo__image-link">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                      <img class="page-photo__image" src="img/photo-cactus-mobile@1x.jpg"
+                        srcset="img/photo-cactus-mobile@2x.jpg 2x" alt="Фото местной растительности" width="280"
+                        height="280">
+                    </picture>
+                  </a>
                   <div class="page-photo__wrapper-footer">
                     <h3 class="page-photo__title">Местная растительность</h3>
                     <cite class="page-photo__author-photo">Автор фото: Сергей</cite>
@@ -89,8 +104,16 @@
               </li>
               <li class="page-photo__item">
                 <div class="page-photo__item-wrapper">
-                  <a class="page-photo__image-link"><img class="page-photo__image"
-                      src="../img/photo-roads-mobile@1x.jpg" alt="Фото дороги на север" width="280" height="280"></a>
+                  <a class="page-photo__image-link">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                      <img class="page-photo__image" src="img/photo-roads-mobile@1x.jpg"
+                        srcset="img/photo-roads-mobile@2x.jpg 2x" alt="Фото дороги на север" width="280" height="280">
+                    </picture>
+                  </a>
                   <div class="page-photo__wrapper-footer">
                     <h3 class="page-photo__title">Дорога на север</h3>
                     <cite class="page-photo__author-photo">Автор фото: Петр</cite>
@@ -100,8 +123,16 @@
               </li>
               <li class="page-photo__item">
                 <div class="page-photo__item-wrapper">
-                  <a class="page-photo__image-link"><img class="page-photo__image"
-                      src="../img/photo-bridge-mobile@1x.jpg" alt="Фото моста дьявола" width="280" height="280"></a>
+                  <a class="page-photo__image-link">
+                    <picture>
+                      <source media="(min-width: 1200px)"
+                        srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                      <source media="(min-width: 768px)"
+                        srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                      <img class="page-photo__image" src="img/photo-bridge-mobile@1x.jpg"
+                        srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Фото моста дьявола" width="280" height="280">
+                    </picture>
+                  </a>
                   <div class="page-photo__wrapper-footer">
                     <h3 class="page-photo__title">Мост дьявола</h3>
                     <cite class="page-photo__author-photo">Автор фото: Антон</cite>

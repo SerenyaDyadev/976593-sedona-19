@@ -102,33 +102,40 @@
 @media @tablet-width {
   .page-footer__wrapper {
     flex-direction: row;
-    justify-content: center;
-    padding-top: 10px;
-    padding-right: 15px;
+    padding-top: 20px;
+    text-align: center;
   }
 
   .page-footer__contacts {
-    padding: 0;
-  }
+    flex-grow: 1;
+    }
+
 
   .page-footer__social {
-    padding: 0 13.5% 0 15%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    flex-grow: 1;
   }
 
-  .social__link {
-    width: 46px;
-    height: 46px;
-    background-color: @bg-blue;
+  .social__list {
+    margin-left: -10px;
+  }
+
+  .page-footer__copyright {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    padding: 0;
   }
 }
 
 @media @desktop-width {
   .page-footer__wrapper {
-    padding-top: 20px;
-    padding-right: 30px;
+    padding-top: 22px;
   }
 
   .page-footer__social {
-    padding: 0 21% 0 23%;
+    margin: 0 35px;
   }
 }

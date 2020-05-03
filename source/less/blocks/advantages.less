@@ -82,23 +82,19 @@
   text-align: left;
 }
 
-.about-advantage__icon-house,
-.about-advantage__icon-gift {
+.about-advantage__icon {
   position: absolute;
   content: "";
   top: 0;
   left: -49px;
   width: 39px;
   height: 37px;
-}
+  fill:@bg-blue;
 
-.about-advantage__icon-food {
-  position: absolute;
-  content: "";
-  top: 5px;
-  left: -51px;
-  width: 39px;
-  height: 37px;
+  &--food {
+    top: 5px;
+    left: -51px;
+  }
 }
 
 .about-advantage__item-header {
@@ -191,9 +187,7 @@
     }
   }
 
-  .about-advantage__icon-house,
-  .about-advantage__icon-food,
-  .about-advantage__icon-gift {
+  .about-advantage__icon {
     top: 60px;
     left: 50%;
     margin-left: -37px;

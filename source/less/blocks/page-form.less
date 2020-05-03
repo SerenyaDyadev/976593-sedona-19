@@ -133,8 +133,8 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-top: 4px;
-  padding: 20px;
+  margin-top: 5px;
+  padding: 20px ;
   background-color: #f2f2f2;
   border: none;
 
@@ -264,6 +264,7 @@
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -340,8 +341,8 @@
 
 .form-button {
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 34px;
+  padding-right: 34px;
   margin-bottom: 48px;
 }
 
@@ -478,7 +479,7 @@
 
   .form__text {
     width: 100%;
-    padding: 0 20px 60px;
+    padding: 0 20px 55px;
     border-top: 1px solid #000000;
   }
 
@@ -497,8 +498,7 @@
 
   .form-button {
     margin-left: 20px;
-    padding-left: 62px;
-    padding-right: 62px;
+    padding: 17px 55px;
     margin-bottom: 70px;
     text-transform: uppercase;
   }
@@ -601,6 +601,11 @@
     display: none;
   }
 
+  .form__contacts-item--phone::after,
+  .form__contacts-item--mail::after {
+    top: 76px;
+  }
+
   .form__contacts-label {
     padding: 0;
     padding-right: 15px;
@@ -622,14 +627,14 @@
   .form__sight-list {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: auto;
-    padding-top: 35px;
+    padding-top: 32px;
   }
 
   .form__sight-item {
-    width: 25%;
+    width: auto;
 
     &:nth-child(odd),
     &:nth-child(even) {
@@ -655,12 +660,11 @@
   }
 
   .form__text {
-    padding: 0 0 60px;
+    padding: 0 0 55px;
   }
 
   .form-button {
     margin-left: 0;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding: 17px 134px;
   }
 }

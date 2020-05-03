@@ -26,6 +26,7 @@
 .form input,
 .form textarea {
   font-size: 18px;
+  outline: none;
 }
 
 .form__name {
@@ -132,8 +133,8 @@
   position: relative;
   display: block;
   width: 100%;
-  margin-top: 4px;
-  padding: 20px ;
+  margin-top: 5px;
+  padding: 20px;
   background-color: #f2f2f2;
   border: none;
 
@@ -263,6 +264,7 @@
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
+  cursor: pointer;
 
   &::before {
     content: "";
@@ -283,7 +285,7 @@
   height: 19px;
   top: 7px;
   left: 17px;
-  background-image: url(../img/icon-tick.svg);
+  background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
@@ -313,8 +315,10 @@
 .form__text-textarea {
   display: block;
   margin: 0 auto;
+  padding: 15px 20px;
   width: 100%;
   min-height: 160px;
+  line-height: 26px;
   resize: none;
   background-color: #f2f2f2;
   border: none;
@@ -324,23 +328,21 @@
   }
 
   &:focus {
+    padding: 10px 17px;
     border: 4px solid #e5e5e5;
     background-color: #ffffff;
   }
 }
 
 .form__text-textarea::placeholder {
-  padding-left: 18px;
-  padding-top: 14px;
   font-size: 16px;
-  line-height: 26px;
   font-weight: 700;
 }
 
 .form-button {
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 34px;
+  padding-right: 34px;
   margin-bottom: 48px;
 }
 
@@ -428,6 +430,14 @@
     padding-right: 60px;
   }
 
+  .form__contacts-item--phone::after {
+    top: 37px;
+  }
+
+  .form__contacts-item--mail::after {
+    top: 37px;
+  }
+
   .form__contacts-list {
     padding-top: 22px;
   }
@@ -477,7 +487,7 @@
 
   .form__text {
     width: 100%;
-    padding: 0 20px 60px;
+    padding: 0 20px 55px;
     border-top: 1px solid #000000;
   }
 
@@ -486,15 +496,17 @@
     padding: 45px 40px 55px;
   }
 
-  .form__text-textarea::placeholder {
-    padding-top: 16px;
-    font-size: 16px;
+  .form__text-textarea {
+    padding: 16px 20px;
+
+    &:focus {
+      padding: 12px 17px;
+    }
   }
 
   .form-button {
     margin-left: 20px;
-    padding-left: 62px;
-    padding-right: 62px;
+    padding: 17px 55px;
     margin-bottom: 70px;
     text-transform: uppercase;
   }
@@ -585,12 +597,12 @@
 
   .form__contacts-item--phone::after {
     right: 80px;
-    top: 77px;
+    top: 76px;
   }
 
   .form__contacts-item--mail::after {
     right: 0;
-    top: 77px;
+    top: 76px;
   }
 
   .contact-word {
@@ -618,14 +630,15 @@
   .form__sight-list {
     display: flex;
     flex-direction: row;
-    justify-content: stretch;
+    justify-content: space-between;
     flex-wrap: wrap;
     width: auto;
-    padding-top: 35px;
+    padding-top: 32px;
   }
 
   .form__sight-item {
-    width: 25%;
+    width: auto;
+
     &:nth-child(odd),
     &:nth-child(even) {
       padding: 0;
@@ -635,13 +648,12 @@
   .form__sight-name {
     display: inline-block;
     width: 100%;
-    padding: 0;
     padding: 23px 0;
     padding-left: 80px;
 
     &::before {
       top: 8px;
-      left: 0px;
+      left: 0;
     }
   }
 
@@ -656,7 +668,6 @@
 
   .form-button {
     margin-left: 0;
-    padding-left: 140px;
-    padding-right: 140px;
+    padding: 17px 134px;
   }
 }

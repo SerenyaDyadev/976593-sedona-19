@@ -4,11 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>Фото и видео</title>
 </head>
 
 <body>
+  <div style="display: none;">
+    <include src="img/sprite.svg"></include>
+  </div>
   <div class="container">
     <header class="page-header">
       <a href="index.html" class="page-header__logo">
@@ -22,10 +25,10 @@
       <nav class="main-nav">
         <button class="main-nav__toggle main-nav__toggle--nojs" type="button">
           <svg class="main-nav__toggle-cross main-nav__toggle-cross--active" width="22" height="22">
-            <use xlink:href="img/icon-sprite.svg#icon-cross"></use>
+            <use xlink:href=#icon-cross></use>
           </svg>
           <svg class="main-nav__toggle-menu" width="23" height="22">
-            <use xlink:href="img/icon-sprite.svg#icon-menu"></use>
+            <use xlink:href="#icon-menu"></use>
           </svg>
         </button>
         <ul class="main-nav__list">
@@ -76,7 +79,7 @@
                     <cite class="page-photo__author-photo">Автор фото: Борис</cite>
                     <p class="page-photo__like-numbers page-photo__like-numbers--wide">
                       <svg class="page-photo__icon-like" width="22" height="20">
-                        <use xlink:href="img/icon-sprite.svg#icon-like"></use>
+                        <use xlink:href="#icon-like"></use>
                       </svg>
                       1350</p>
                   </div>
@@ -107,7 +110,7 @@
                     <cite class="page-photo__author-photo">Автор фото: Сергей</cite>
                     <p class="page-photo__like-numbers">
                       <svg class="page-photo__icon-like" width="22" height="20">
-                        <use xlink:href="img/icon-sprite.svg#icon-like"></use>
+                        <use xlink:href="#icon-like"></use>
                       </svg>
                       143</p>
                   </div>
@@ -137,7 +140,7 @@
                     <cite class="page-photo__author-photo">Автор фото: Петр</cite>
                     <p class="page-photo__like-numbers">
                       <svg class="page-photo__icon-like" width="22" height="20">
-                        <use xlink:href="img/icon-sprite.svg#icon-like"></use>
+                        <use xlink:href="#icon-like"></use>
                       </svg>
                       96</p>
                   </div>
@@ -167,7 +170,7 @@
                     <cite class="page-photo__author-photo">Автор фото: Антон</cite>
                     <p class="page-photo__like-numbers">
                       <svg class="page-photo__icon-like" width="22" height="20">
-                        <use xlink:href="img/icon-sprite.svg#icon-like"></use>
+                        <use xlink:href="#icon-like"></use>
                       </svg>
                       254</p>
                   </div>
@@ -199,13 +202,13 @@
                 <span class="page-video__slider-control"></span>
               </div>
               <svg class="page-video__replay" width="16" height="22">
-                <use xlink:href="img/icon-sprite.svg#icon-video-replay"></use>
+                <use xlink:href="#icon-video-replay"></use>
               </svg>
               <svg class="page-video__subtitles" width="32" height="20">
-                <use xlink:href="img/icon-sprite.svg#icon-video-subtitles"></use>
+                <use xlink:href="#icon-video-subtitles"></use>
               </svg>
               <svg class="page-video__fullscreen" width="20" height="20">
-                <use xlink:href="img/icon-sprite.svg#icon-video-fullscreen"></use>
+                <use xlink:href="#icon-video-fullscreen"></use>
               </svg>
             </div>
           </div>
@@ -222,7 +225,7 @@
                 <li class="social__item">
                   <a class="social__link social__link--twitter" href="https://twitter.com">Мы в Твиттере
                     <svg class="social__icon social__icon--twitter" width="17" height="15">
-                      <use xlink:href="img/icon-sprite.svg#icon-twitter"></use>
+                      <use xlink:href="#icon-twitter"></use>
                     </svg>
                   </a>
                 </li>
@@ -230,7 +233,7 @@
                   <a class="social__link social__link--facebook" href="https://www.facebook.com"> Мы в
                     Файсбуке
                     <svg class="social__icon social__icon--twitter" width="9" height="19">
-                      <use xlink:href="img/icon-sprite.svg#icon-facebook"></use>
+                      <use xlink:href="#icon-facebook"></use>
                     </svg>
                   </a>
                 </li>
@@ -238,7 +241,7 @@
                   <a class="social__link social__link--youtube" href="https://www.youtube.com">Мы в
                     Инстаграме
                     <svg class="social__icon social__icon--youtube" width="20" height="14">
-                      <use xlink:href="img/icon-sprite.svg#icon-youtube"></use>
+                      <use xlink:href="#icon-youtube"></use>
                     </svg>
                   </a>
                 </li>
@@ -249,7 +252,7 @@
             <b class="copyright__text">Разработано:</b>
             <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
               <svg class="copiright__icon-htmlacademy" width="27" height="34">
-                <use xlink:href="img/icon-sprite.svg#htmlacademy"></use>
+                <use xlink:href="#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>

@@ -14,7 +14,8 @@ var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
-var del = require("del")
+var del = require("del");
+var htmlmin = require('gulp-htmlmin');
 
 gulp.task("clean", function () {
   return del("build")
@@ -71,6 +72,12 @@ gulp.task("html", function () {
     .pipe(posthtml([
       include({ root: "./build" })
     ]))
+    .pipe(gulp.dest("build"));
+});
+
+gulp.task("htmlmin", function () {
+  return gulp.src("build/*.html")
+    .pipe(htmlmin({ collapseWhitespace: true }))
     .pipe(gulp.dest("build"));
 });
 

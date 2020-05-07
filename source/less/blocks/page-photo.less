@@ -139,7 +139,9 @@
   .page-photo {
     padding: 60px 0 51px;
   }
-
+  .page-photo__item-wrapper {
+    position: relative;
+  }
   .page-photo__item {
     width: 33.3%;
 
@@ -159,12 +161,17 @@
   }
 
   .page-photo__wrapper-footer {
-    margin-top: -80px;
-    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    min-height: 80px;
+    left: 0;
+    bottom: 0;
+    background-color: #000000;
     color: #ffffff;
   }
 
   .page-photo__icon-like {
+    right: 0px;
     opacity: 1;
     fill: #ffffff;
   }

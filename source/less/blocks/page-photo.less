@@ -139,9 +139,17 @@
   .page-photo {
     padding: 60px 0 51px;
   }
+
   .page-photo__item-wrapper {
     position: relative;
+    background-color: #000000;
+    max-height: 267px;
+
+    &--wide {
+      max-height: 400px;
+    }
   }
+
   .page-photo__item {
     width: 33.3%;
 
@@ -150,28 +158,28 @@
     }
   }
 
-  .page-photo__image-link {
-    max-height: 410px;
-  }
-
-  .page-photo__image--wide {
-    padding: 0;
-    margin: 0;
-    max-height: 410px;
-  }
-
   .page-photo__wrapper-footer {
     position: absolute;
     width: 100%;
-    min-height: 80px;
     left: 0;
-    bottom: 0;
-    background-color: #000000;
+    bottom: 0px;
     color: #ffffff;
+    z-index: 2;
+
+    &::after {
+      position: absolute;
+      content: "";
+      min-height: 80px;
+      width: 100%;
+      left: 0;
+      bottom: 0px;
+      background-color: #000000;
+      z-index: 1;
+      opacity: 0.1;
+    }
   }
 
   .page-photo__icon-like {
-    right: 0px;
     opacity: 1;
     fill: #ffffff;
   }

@@ -124,16 +124,16 @@
 
   .main-nav__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
   }
 
   .main-nav__item {
-    display: block;
-    width: 20%;
+    min-width: 148px;
     border-bottom: none;
 
     &:nth-child(2) {
-      margin-right: 156px;
+      margin-right: 165px;
     }
   }
 
@@ -141,6 +141,7 @@
     background-color: #ffffff;
     color: #000000;
     font-size: 14px;
+    padding: 6px 0 9px;
 
     &:active,
     &:hover {
@@ -180,10 +181,12 @@
 
 @media @desktop-width {
   .main-nav__item {
-    min-width: 239px;
+    width: 19%;
+    outline: 2px solid red;
+    // min-width: 239px;
 
     &:nth-child(2) {
-      margin-right: 244px;
+      margin-right: 255px;
     }
   }
 }

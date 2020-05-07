@@ -60,7 +60,7 @@
 .advantages__image {
   display: block;
   width: 100%;
-  min-height: 260px;
+  max-height: 260px;
 }
 
 .about-advantage__list {
@@ -122,6 +122,7 @@
   .advantages__item {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 
     &--wide {
       width: 33.3%;
@@ -162,8 +163,7 @@
   .advantages__image {
     padding: 0;
     width: 100%;
-    min-height: 256px;
-    height: 100%;
+    max-height: 256px;
   }
 
   .about-advantage__list {
@@ -206,7 +206,7 @@
 
 @media @desktop-width {
   .advantages__item-wrapper {
-    padding: 50px 65px 50px;
+    padding: 50px 60px 50px;
     width: 33.3%;
 
     &--grey {
@@ -218,11 +218,6 @@
 
   .advantages__item-header {
     padding: 0 60px 7px;
-  }
-
-  .advantages__image {
-    object-fit: cover;
-    max-height: 256px;
   }
 
   .about-advantage__item {

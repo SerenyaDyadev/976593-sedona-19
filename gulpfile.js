@@ -86,7 +86,7 @@ gulp.task("htmlmin", function () {
 gulp.task('compress-js', function () {
   return gulp.src("source/js/*.js")
   .pipe(uglify())
-  .pipe(rename("sсript.min.js"))
+  .pipe(rename("script.min.js"))
   .pipe(gulp.dest("build/js"));
 });
 
@@ -114,6 +114,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/*.ico",
+    "source/js/picturefill.min.js",
   ], {
     base: "source"
   })

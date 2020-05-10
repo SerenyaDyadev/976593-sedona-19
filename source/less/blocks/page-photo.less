@@ -19,7 +19,7 @@
 
 .page-photo__item-wrapper {
   position: relative;
-  padding: 21px 0 18px;
+  padding: 22px 0 14px;
 }
 
 .page-photo__image-link {
@@ -29,13 +29,13 @@
 .page-photo__image {
   width: 100%;
   min-height: 280px;
+  padding-bottom: 7px;
 }
 
 .page-photo__title {
   display: block;
   margin: 0;
   padding: 0;
-  padding-top: 7px;
   font-weight: 700;
   font-size: 14px;
   line-height: 24px;
@@ -43,29 +43,46 @@
 
 .page-photo__author-photo {
   display: block;
+  padding: 0 0 7px;
+  margin: 0;
+  line-height: 24px;
   font-style: normal;
+  font-size: 14px;
   text-transform: none;
 }
 
-.page-photo__like-numbers {
+.page-photo__like-button {
   display: block;
+  position: relative;
   margin: 0;
-  padding-top: 6px;
-  padding-left: 37px;
-  font-weight: 700;
+  padding: 14px;
+  width: 70px;
+  font-weight: 400;
   line-height: 24px;
+  font-size: 14px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  cursor: pointer;
 }
 
 .page-photo__icon-like {
   position: absolute;
+  bottom: 8px;
   left: 0;
   opacity: 0.3;
+}
+
+.page-photo__icon-numbers {
+  position: absolute;
+  bottom: 3px;
+  left: 37px;
 }
 
 
 @media @tablet-width {
   .page-photo {
-    padding: 67px 60px 40px;
+    padding: 65px 60px 5px;
   }
 
   .page-photo__list {
@@ -95,7 +112,9 @@
 
   .page-photo__image {
     width: 100%;
-    min-height: 267px;
+    padding: 0;
+    min-height: 265px;
+
 
     &--wide {
       width: 100%;
@@ -106,11 +125,10 @@
   .page-photo__wrapper-footer {
     display: block;
     position: relative;
-    padding: 0 21px 16px;
+    padding: 6px 20px 11px;
   }
 
   .page-photo__title {
-    padding-top: 6px;
     padding-right: 90px;
   }
 
@@ -118,18 +136,14 @@
     padding-right: 90px;
   }
 
-  .page-photo__like-numbers {
+  .page-photo__like-button {
     position: absolute;
-    bottom: 28px;
-    right: 29px;
-
-    &--wide {
-      bottom: 28px;
-      right: 20px;
-    }
+    top: 18px;
+    right: 19px;
   }
 
   .page-photo__icon-like {
+    top: 1px;
     left: 5px;
     opacity: 0.3;
   }
@@ -137,7 +151,7 @@
 
 @media @desktop-width {
   .page-photo {
-    padding: 60px 0 51px;
+    padding: 60px 0 70px;
   }
 
   .page-photo__item-wrapper {
@@ -151,7 +165,7 @@
   }
 
   .page-photo__item {
-    width: 33.3%;
+    width: 33.33%;
 
     &--wide {
       width: 100%;
@@ -160,10 +174,11 @@
 
   .page-photo__wrapper-footer {
     position: absolute;
+    padding: 7px 21px 10px;
     width: 100%;
+    color: #ffffff;
     left: 0;
     bottom: 0;
-    color: #ffffff;
     z-index: 2;
 
     &::after {
@@ -175,12 +190,29 @@
       bottom: 0;
       background-color: #000000;
       z-index: 1;
-      opacity: 0.1;
+      opacity: 0.3;
     }
+  }
+
+  .page-photo__title {
+    padding-right: 90px;
+  }
+
+  .page-photo__author-photo {
+    padding-right: 90px;
+  }
+
+  .page-photo__like-button {
+    top: 19px;
+    right: 20px;
   }
 
   .page-photo__icon-like {
     opacity: 1;
     fill: #ffffff;
+  }
+
+  .page-photo__icon-numbers {
+    color: #ffffff;
   }
 }

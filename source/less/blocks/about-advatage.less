@@ -1,0 +1,108 @@
+.about-advantage__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  .list-none();
+  margin: 0 auto;
+  padding: 25px 30px 20px 70px;
+  background-color: #ffffff;
+  color: #000000;
+  z-index: 0;
+}
+
+.about-advantage__item {
+  position: relative;
+  padding: 10px 0;
+  text-align: left;
+
+  &--house::before {
+    position: absolute;
+    content: url("../img/icon-house.svg");
+    top: 0;
+    left: -49px;
+    width: 39px;
+    height: 37px;
+
+    // border: 1px solid #000000;
+    // fill: #81b3d2;
+    // background-color: #81b3d2;
+  }
+}
+
+.about-advantage__icon {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -49px;
+  width: 39px;
+  height: 37px;
+  fill: #81b3d2;
+
+  &--food {
+    top: 5px;
+    left: -51px;
+  }
+}
+
+.about-advantage__item-header {
+  display: block;
+  margin: 0;
+  padding-bottom: 15px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.about-advantage__item-text {
+  margin: 0;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+@media @tablet-width {
+  .about-advantage__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .about-advantage__item {
+    width: 33.3%;
+    padding: 157px 45px 50px;
+    text-align: center;
+
+    &:nth-child(2) {
+      order: 1;
+    }
+  }
+
+  .about-advantage__icon {
+    top: 60px;
+    left: 50%;
+    margin-left: -37px;
+    width: 75px;
+    height: 72px;
+  }
+
+  .about-advantage__item-header {
+    padding-bottom: 23px;
+    font-size: 21px;
+  }
+
+  .about-advantage__item-text {
+    line-height: 21px;
+  }
+
+  .advantages__border-bottom::after {
+    display: none;
+  }
+}
+
+@media @desktop-width {
+  .about-advantage__item {
+    padding: 160px 67px 72px;
+  }
+
+  .about-advantage__item-header {
+    padding-bottom: 21px;
+  }
+}

@@ -42,7 +42,7 @@
     <main class="page-main">
       <h1 class="visually-hidden">Фото и видео из седоны</h1>
       <div class="page-main__intro page-main__intro--inner">
-        <img src="img/text-sedona.svg" class="intro__text-sedona" alt="" width="229" height="39">
+        <img src="img/text-sedona.svg" class="intro__text-sedona" alt="" width="230" height="39">
       </div>
       <div class="page-main__header page-main__header--inner">
         <p class="page-main__title page-main__title--inner">Фото и видео</p>
@@ -75,11 +75,11 @@
                 <div class="page-photo__wrapper-footer">
                   <h3 class="page-photo__title">Неродные просторы</h3>
                   <cite class="page-photo__author-photo">Автор фото: Борис</cite>
-                  <p class="page-photo__like-numbers page-photo__like-numbers--wide">
+                  <button class="page-photo__like-button page-photo__like-button--wide" type="button">
                     <svg class="page-photo__icon-like" width="22" height="20">
                       <use xlink:href="#icon-like"></use>
                     </svg>
-                    1350</p>
+                    <span class="page-photo__icon-numbers">1350</span></button>
                 </div>
               </div>
             </li>
@@ -106,11 +106,11 @@
                 <div class="page-photo__wrapper-footer">
                   <h3 class="page-photo__title">Местная растительность</h3>
                   <cite class="page-photo__author-photo">Автор фото: Сергей</cite>
-                  <p class="page-photo__like-numbers">
+                  <button class="page-photo__like-button" type="button">
                     <svg class="page-photo__icon-like" width="22" height="20">
                       <use xlink:href="#icon-like"></use>
                     </svg>
-                    143</p>
+                    <span class="page-photo__icon-numbers">143</span></button>
                 </div>
               </div>
             </li>
@@ -136,11 +136,11 @@
                 <div class="page-photo__wrapper-footer">
                   <h3 class="page-photo__title">Дорога на север</h3>
                   <cite class="page-photo__author-photo">Автор фото: Петр</cite>
-                  <p class="page-photo__like-numbers">
+                  <button class="page-photo__like-button" type="button">
                     <svg class="page-photo__icon-like" width="22" height="20">
                       <use xlink:href="#icon-like"></use>
                     </svg>
-                    96</p>
+                    <span class="page-photo__icon-numbers">96</span></button>
                 </div>
               </div>
             </li>
@@ -166,11 +166,11 @@
                 <div class="page-photo__wrapper-footer">
                   <h3 class="page-photo__title">Мост дьявола</h3>
                   <cite class="page-photo__author-photo">Автор фото: Антон</cite>
-                  <p class="page-photo__like-numbers">
+                  <button class="page-photo__like-button" type="button">
                     <svg class="page-photo__icon-like" width="22" height="20">
                       <use xlink:href="#icon-like"></use>
                     </svg>
-                    254</p>
+                    <span class="page-photo__icon-numbers">254</span></button>
                 </div>
               </div>
             </li>
@@ -178,12 +178,10 @@
         </div>
       </section>
       <section class="page-video">
-        <div class="page-video__wrapper">
           <h2 class="visually-hidden">Видео из Седоны</h2>
           <b class="page-video__title">Все еще сомневаетесь?</b>
           <p class="page-video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
             очередной раз!</p>
-          <div class="page-video__control-wrapper">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)"
                 srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
@@ -196,20 +194,26 @@
               <img src="img/video-mobile@1x.jpg" class="page-video__video-file" srcset="img/video-mobile@2x.jpg 2x"
                 alt="Видео из седоны" width="321" height="201">
             </picture>
+          <div class="page-video__control-wrapper">
             <div class="page-video__slider">
-              <span class="page-video__slider-control"></span>
+              <button class="page-video__slider-toogle" type="button" name="Курсор прокрутки"></button>
             </div>
-            <svg class="page-video__replay" width="16" height="22">
-              <use xlink:href="#icon-video-replay"></use>
-            </svg>
-            <svg class="page-video__subtitles" width="32" height="20">
-              <use xlink:href="#icon-video-subtitles"></use>
-            </svg>
-            <svg class="page-video__fullscreen" width="20" height="20">
-              <use xlink:href="#icon-video-fullscreen"></use>
-            </svg>
+            <button class="page-video__replay-button" type="button" name="Повтор видео">
+              <svg class="page-video__replay" width="16" height="22">
+                <use xlink:href="#icon-video-replay"></use>
+              </svg>
+            </button>
+            <button class="page-video__subtitles-button" name="Включить субтитры">
+              <svg class="page-video__subtitles" width="32" height="20">
+                <use xlink:href="#icon-video-subtitles"></use>
+              </svg>
+            </button>
+            <button class="page-video__fullscreen-button" name="Открыть на весь экран">
+              <svg class="page-video__fullscreen" width="20" height="20">
+                <use xlink:href="#icon-video-fullscreen"></use>
+              </svg>
+            </button>
           </div>
-        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -257,8 +261,8 @@
   </div>
   <script src="js/sсript.min.js">
   </script>
-  <script src="js/picturefill.min.js">
-  </script>
+  <!-- <script src="js/picturefill.min.js">
+  </script> -->
 </body>
 
 </html>

@@ -4,7 +4,7 @@
   flex-direction: column;
   .list-none();
   margin: 0 auto;
-  padding: 25px 30px 20px 70px;
+  padding: 24px 30px 19px 19px;
   background-color: #ffffff;
   color: #000000;
   z-index: 0;
@@ -12,35 +12,27 @@
 
 .about-advantage__item {
   position: relative;
-  padding: 10px 0;
+  padding: 11px 0 11px 51px ;
   text-align: left;
+  background-size: contain;
+  background-repeat: no-repeat;
 
-  &--house::before {
-    position: absolute;
-    content: url("../img/icon-house.svg");
-    top: 0;
-    left: -49px;
-    width: 39px;
-    height: 37px;
-
-    // border: 1px solid #000000;
-    // fill: #81b3d2;
-    // background-color: #81b3d2;
+  &--house {
+    background-image: url("../img/icon-house.svg");
+    background-size: 37px;
+    background-position: 3px 2px;
   }
-}
 
-.about-advantage__icon {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: -49px;
-  width: 39px;
-  height: 37px;
-  fill: #81b3d2;
+  &--gift {
+    background-image: url("../img/icon-gift.svg");
+    background-size: 32px;
+    background-position: 5px -1px;
+  }
 
   &--food {
-    top: 5px;
-    left: -51px;
+    background-image: url("../img/icon-burger.svg");
+    background-size: 38px;
+    background-position: 0 6px;
   }
 }
 
@@ -54,7 +46,7 @@
 
 .about-advantage__item-text {
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   line-height: 20px;
 }
 
@@ -67,24 +59,34 @@
 
   .about-advantage__item {
     width: 33.3%;
-    padding: 157px 45px 50px;
+    padding: 159px 47px 54px;
     text-align: center;
 
     &:nth-child(2) {
       order: 1;
     }
-  }
 
-  .about-advantage__icon {
-    top: 60px;
-    left: 50%;
-    margin-left: -37px;
-    width: 75px;
-    height: 72px;
+    &--house {
+      background-image: url("../img/icon-house.svg");
+      background-size: 75px;
+      background-position: center 59px;
+    }
+
+    &--gift {
+      background-image: url("../img/icon-gift.svg");
+      background-size: 64px;
+      background-position: center 56px;
+    }
+
+    &--food {
+      background-image: url("../img/icon-burger.svg");
+      background-size: 77px;
+      background-position: center 62px;
+    }
   }
 
   .about-advantage__item-header {
-    padding-bottom: 23px;
+    padding-bottom: 21px;
     font-size: 21px;
   }
 
@@ -99,7 +101,12 @@
 
 @media @desktop-width {
   .about-advantage__item {
-    padding: 160px 67px 72px;
+    padding: 160px 70px 73px;
+
+    &--food {
+      padding-left: 50px;
+      padding-right: 50px;
+    }
   }
 
   .about-advantage__item-header {

@@ -1,5 +1,5 @@
 .page-booking {
-  padding: 25px 0 8px;
+  padding: 27px 0 8px;
 }
 
 .page-booking__title {
@@ -12,7 +12,7 @@
 .page-booking__text {
   display: block;
   margin: 0;
-  padding: 0 20px 40px;
+  padding: 0 20px 38px;
   text-align: center;
   line-height: 23px;
 }
@@ -21,11 +21,19 @@
   padding: 0 20px;
 }
 
-.page-booking__map {
+.page-booking__yandex-map {
   display: block;
-  padding-top: 50px;
   width: 100%;
-  min-height: 350px;
+  padding-top: 50px;
+  min-height: 400px;
+}
+
+.page-booking__map {
+  display: none;
+  // display: block;
+  // padding-top: 50px;
+  // width: 100%;
+  // min-height: 350px;
 }
 
 @media @tablet-width {
@@ -34,7 +42,7 @@
   }
 
   .page-booking__title {
-    padding-bottom: 32px;
+    padding-bottom: 33px;
     font-size: 30px;
   }
 
@@ -47,8 +55,15 @@
     padding-right: 155px;
   }
 
+  .page-booking__yandex-map {
+    display: none;
+  }
+
   .page-booking__map {
+    display: block;
+    width: 100%;
     padding-top: 60px;
+    min-height: 350px;
   }
 }
 
@@ -58,11 +73,11 @@
   }
 
   .page-booking__title {
-    padding-bottom: 30px;
+    padding-bottom: 31px;
   }
 
   .page-booking__text {
-    padding: 0 402px 49px;
+    padding: 0 402px 48px;
     line-height: 24px;
   }
 

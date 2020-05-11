@@ -22,15 +22,15 @@
   left: 20px;
   right: 20px;
   background-color: #333333;
+  opacity: 0.1;
   z-index: 1;
 }
 
 .advantages__item-wrapper {
-  padding: 40px 33px;
+  padding: 40px 29px;
 
   &--grey {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding: 28px 33px;
     background-color: #eeeeee;
     color: #000000;
   }
@@ -47,7 +47,7 @@
 
 .advantages__item-number {
   display: block;
-  padding-bottom: 14px;
+  padding-bottom: 13px;
   font-weight: 400;
 }
 
@@ -68,7 +68,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 50px;
+    padding-top: 49px;
     padding-bottom: 35px;
   }
 
@@ -89,7 +89,7 @@
 
     &--grey {
       width: 100%;
-      padding-bottom: 44px;
+      padding: 45px 45px 44px;
     }
   }
 
@@ -99,7 +99,7 @@
   }
 
   .advantages__item-number {
-    padding-bottom: 20px;
+    padding-bottom: 18px;
   }
 
   .advantages__image-wrapper {
@@ -122,17 +122,35 @@
 
 @media @desktop-width {
   .advantages__item-wrapper {
-    padding: 50px 60px 50px;
+    padding: 52px 60px 50px;
     width: 33.3%;
 
     &--grey {
       width: 100%;
-      padding-top: 45px;
-      padding-bottom: 64px;
+      padding: 46px 55px 65px;
+    }
+
+    &--grey .advantages__item-header {
+      padding-bottom: 6px;
+    }
+
+    &--bridge .advantages__item-text {
+      padding-left: 30px;
+      padding-right: 30px;
     }
   }
 
   .advantages__item-header {
-    padding: 0 60px 7px;
+    padding: 0 65px 7px;
+  }
+
+  .advantages__item-number {
+    padding-bottom: 19px;
+  }
+
+  .advantages__image {
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
   }
 }

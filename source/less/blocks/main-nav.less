@@ -99,19 +99,13 @@
   }
 
   .main-nav__link {
-    &--mobile-down {
-      color: #65a0c4;
-      background-color: #5496bd;
+    &:hover {
+      background-color: #669ec0;
       box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
 
     &:active {
       color: #86b5d0;
-      box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-    }
-
-    &:hover {
-      background-color: #669ec0;
       box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
   }
@@ -143,22 +137,15 @@
     font-size: 14px;
     padding: 6px 0 9px;
 
-    &:active,
     &:hover {
       color: #81b3d2;
       background-color: #ffffff;
       box-shadow: none;
     }
 
-    &:disabled {
+    &:active {
       opacity: 0.3;
       color: #000000;
-    }
-
-    &--disabled {
-      color: #65a0c4;
-      background-color: #5496bd;
-      box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
     }
   }
 
@@ -166,15 +153,11 @@
     color: #766357;
     cursor: pointer;
 
-    &:active {
-      color: #766357;
-    }
-
     &:hover {
       color: #604e43;
     }
 
-    &:disabled {
+    &:active {
       color: #766357;
     }
   }

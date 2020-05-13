@@ -53,41 +53,50 @@
       </div>
       <section class="page-form">
         <form class="form" method="post" action="https://echo.htmlacademy.ru">
-          <fieldset class="form__name">
-            <legend class="form__name-title">Представьтесь:</legend>
-            <ul class="form__name-list">
-              <li class="form__name-item">
-                <label class="form__name-label">Имя<sup>*</sup>:
-                  <input class="form__name-input" type="text" name="name" placeholder="Петр">
-                </label>
-              </li>
-              <li class="form__name-item">
-                <label class="form__name-label">Фамилия<sup>*</sup>:
-                  <input class="form__name-input" type="text" name="family-name" placeholder="Иванов">
-                </label>
-              </li>
-              <li class="form__name-item">
-                <label class="form__name-label">Отчество:
-                  <input class="form__name-input" type="text" name="patronymic" placeholder="Александрович">
-                </label>
-              </li>
-            </ul>
+          <fieldset class="form__fieldset">
+            <div class="form__name">
+              <p class="form__name-title">Представьтесь:</p>
+              <ul class="form__name-list">
+                <li class="form__name-item">
+                  <div class="form__name-wrapper">
+                    <label class="form__name-label">Имя*:
+                      <input class="form__name-input" type="text" name="name" placeholder="Петр" required>
+                    </label>
+                  </div>
+                </li>
+                <li class="form__name-item">
+                  <div class="form__name-wrapper">
+                    <label class="form__name-label">Фамилия*:
+                      <input class="form__name-input" type="text" name="family-name" placeholder="Иванов">
+                    </label>
+                  </div>
+                </li>
+                <li class="form__name-item">
+                  <div class="form__name-wrapper">
+                    <label class="form__name-label">Отчество:
+                      <input class="form__name-input" type="text" name="patronymic" placeholder="Александрович">
+                    </label>
+                  </div>
+                </li>
+              </ul>
           </fieldset>
-          <fieldset class="form__contacts">
-            <legend class="form__contacts-title">Контактная информация:</legend>
-            <ul class="form__contacts-list">
-              <li class="form__contacts-item form__contacts-item--phone">
-                <label for="phone" class="form__contacts-label"><span class="contact-word">Контактный</span>
-                  телефон<sup>*</sup>:</label>
-                <input id="phone" class="form__contacts-input" type="tel" name="phone" placeholder="Введите телефон"
-                  required>
-              </li>
-              <li class="form__contacts-item form__contacts-item--mail">
-                <label for="email" class="form__contacts-label">Электронная почта<sup>*</sup>:</label>
-                <input id="email" class="form__contacts-input" type="email" name="email" placeholder="Введите e-mail"
-                  required>
-              </li>
-            </ul>
+          <fieldset class="form__fieldset">
+            <div class="form__contacts">
+              <p class="form__contacts-title">Контактная информация:</p>
+              <ul class="form__contacts-list">
+                <li class="form__contacts-item form__contacts-item--phone">
+                  <label for="phone" class="form__contacts-label"><span class="contact-word">Контактный</span>
+                    телефон<sup>*</sup>:</label>
+                  <input id="phone" class="form__contacts-input" type="tel" name="phone" placeholder="Введите телефон"
+                    required>
+                </li>
+                <li class="form__contacts-item form__contacts-item--mail">
+                  <label for="email" class="form__contacts-label">Электронная почта<sup>*</sup>:</label>
+                  <input id="email" class="form__contacts-input" type="email" name="email" placeholder="Введите e-mail"
+                    required>
+                </li>
+              </ul>
+            </div>
           </fieldset>
           <fieldset class="form__feeling">
             <legend class="form__feeling-title">Ваше общее впечатление:</legend>
@@ -178,7 +187,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-            <svg class="copiright__icon-htmlacademy" width="42" height="42">
+            <svg class="copyright__icon-htmlacademy" width="42" height="42">
               <use xlink:href="#icon-htmlacademy"></use>
             </svg>
           </a>

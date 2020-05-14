@@ -150,12 +150,27 @@
           </fieldset>
           <fieldset class="form__text">
             <div class="form__text-wrapper">
-            <p class="form__text-title">Опишите свои эмоции:</p>
-            <textarea class="form__text-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
+              <p class="form__text-title">Опишите свои эмоции:</p>
+              <textarea class="form__text-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
             </div>
           </fieldset>
           <button class="form-button button" type="submit">Отправить отзыв</button>
         </form>
+      </section>
+      <section class="page-form__modal-failure page-form__modal-failure--open">
+        <b class="page-form__modal-failure-title">Что-то пошло не так!</b>
+        <p class="page-form__modal-failure-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="button page-form__modal-failure-button" type="button">Ок</button>
+      </section>
+      <section class="page-form__modal-succes page-form__modal-succes--open">
+        <b class="page-form__modal-succes-title">Ваш отзыв отправлен!</b>
+        <p class="page-form__modal-succes-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+          мы
+          опубликуем его на сайте.</p>
+        <div class="page-form__modal-succes-button-wrapper">
+          <button class="button page-form__modal-succes-button" type="button">Закрыть окно</button>
+        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -192,8 +207,8 @@
       </div>
     </footer>
   </div>
-  <script src="js/sсript.min.js">
-  </script>
+  <!-- <script src="js/sсript.min.js"> -->
+  <!-- </script> -->
   <!-- <script src="js/picturefill.min.js"> -->
   <!-- </script> -->
 </body>

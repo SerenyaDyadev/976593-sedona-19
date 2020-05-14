@@ -26,7 +26,7 @@
 .form__contacts-title,
 .form__feeling-title,
 .form__sight-title,
-.form__text-title  {
+.form__text-title {
   .form-title ();
   text-align: center;
 }
@@ -37,7 +37,7 @@
 
 .form__name-list {
   .list-none();
-  display:flex;
+  display: flex;
   flex-direction: column;
   width: 100%;
   padding: 11px 20px 25px;
@@ -325,12 +325,90 @@
 
 .form__text-textarea::placeholder {
   font-weight: 700;
+  color: #000000;
 }
 
 .form-button {
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+}
+
+.page-form__modal-failure {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding: 46px 0 35px;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--open {
+    display: block;
+    left: 0;
+    bottom: 800px;
+  }
+}
+
+.page-form__modal-failure-title {
+  display: block;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-form__modal-failure-text {
+  display: block;
+  padding: 35px 55px 15px;
+  text-align: center;
+}
+
+.page-form__modal-failure-button {
+  margin: 0 auto;
+  padding: 20px 75px;
+  font-size: 18px;
+  border: none;
+  outline: none;
+}
+
+.page-form__modal-succes {
+  display: none;
+  position: absolute;
+  width: 100%;
+  padding: 49px 0 0;
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  &--open {
+    display: block;
+    left: 0;
+    bottom: 370px;
+  }
+}
+
+.page-form__modal-succes-title {
+  display: block;
+  padding: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.page-form__modal-succes-text {
+  display: block;
+  padding: 35px 55px 20px;
+  text-align: center;
+}
+
+.page-form__modal-succes-button-wrapper {
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+.page-form__modal-succes-button {
+  margin: 0 auto;
+  padding: 20px 65px;
+  font-size: 18px;
+  border: none;
+  outline: none;
 }
 
 @media @tablet-width {
@@ -537,6 +615,7 @@
       top: 12px;
     }
   }
+
   .form__text-wrapper {
     padding-bottom: 59px;
   }
@@ -554,6 +633,63 @@
     margin-left: 20px;
     padding: 17px 63px;
     text-transform: uppercase;
+  }
+
+  .page-form__modal-failure {
+    width: 400px;
+    padding: 64px 60px 40px;
+
+    &--open {
+      left: 50%;
+      margin-left: -200px;
+      bottom: 350px;
+    }
+  }
+
+  .page-form__modal-failure-title {
+    font-size: 30px;
+    padding: 0 30px 20px;
+    line-height: 40px;
+  }
+
+  .page-form__modal-failure-text {
+    padding: 0 0 15px;
+  }
+
+  .page-form__modal-failure-button {
+    margin: 0 auto;
+    padding: 20px 125px;
+    font-size: 21px;
+  }
+
+  .page-form__modal-succes {
+    width: 640px;
+    padding: 49px 0 0;
+
+    &--open {
+      left: 50%;
+      margin-left: -320px;
+      bottom: 500px;
+    }
+  }
+
+  .page-form__modal-succes-title {
+    padding: 0;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .page-form__modal-succes-text {
+    padding: 20px 112px 20px;
+  }
+
+  .page-form__modal-succes-button-wrapper {
+    padding: 40px;
+  }
+
+  .page-form__modal-succes-button {
+    padding: 20px 160px;
+    font-size: 21px;
   }
 }
 
@@ -576,10 +712,10 @@
   .form__feeling-list {
     padding: 0;
 
-     &::after {
+    &::after {
       right: 0;
       bottom: 5px;
-     }
+    }
   }
 
   .form__feeling-item {
@@ -610,7 +746,7 @@
     padding-left: 79px;
   }
 
-   .form__name-input {
+  .form__name-input {
     width: 78%;
 
     &--wide {
@@ -746,5 +882,9 @@
   .form-button {
     margin-left: 0;
     padding: 17px 141px;
+  }
+
+  .page-form__modal-failure--open {
+    bottom: 200px;
   }
 }

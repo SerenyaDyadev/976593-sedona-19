@@ -97,21 +97,21 @@
             <p class="form__feeling-title">Ваше общее впечатление:</p>
             <ul class="form__feeling-list">
               <li class="form__feeling-item">
-                <label class="form__feeling-label">
+                <label class="form__feeling-label" tabindex="0">
                   <input class="visually-hidden form__feeling-input" type="radio" name="feeling-radio"
                     value="feeling-good" checked>
                   <span class="form__feeling-name">Скорее положительное</span>
                 </label>
               </li>
               <li class="form__feeling-item">
-                <label class="form__feeling-label">
+                <label class="form__feeling-label" tabindex="0">
                   <input class="visually-hidden form__feeling-input" type="radio" name="feeling-radio"
                     value="feeling-bad">
                   <span class="form__feeling-name">Скорее отрицательное</span>
                 </label>
               </li>
               <li class="form__feeling-item">
-                <label class="form__feeling-label">
+                <label class="form__feeling-label" tabindex="0">
                   <input class="visually-hidden form__feeling-input" type="radio" name="feeling-radio"
                     value="feeling-unknown">
                   <span class="form__feeling-name">Затрудняюсь ответить</span>
@@ -123,25 +123,25 @@
             <p class="form__sight-title">Посещенные <br> достопримечательности:</p>
             <ul class="form__sight-list">
               <li class="form__sight-item">
-                <label class="form__sight-label">
+                <label class="form__sight-label" tabindex="0">
                   <input class="visually-hidden form__sight-input" type="checkbox" name="bridge-devil" checked>
                   <span class="form__sight-name">Мост Дьявола</span>
                 </label>
               </li>
               <li class="form__sight-item">
-                <label class="form__sight-label">
+                <label class="form__sight-label" tabindex="0">
                   <input class="visually-hidden form__sight-input" type="checkbox" name="mountain-bell" checked>
                   <span class="form__sight-name">Гора-Колокол</span>
                 </label>
               </li>
               <li class="form__sight-item">
-                <label class="form__sight-label">
+                <label class="form__sight-label" tabindex="0">
                   <input class="visually-hidden form__sight-input" type="checkbox" name="slide-park" checked>
                   <span class="form__sight-name">Слайд-парк</span>
                 </label>
               </li>
               <li class="form__sight-item">
-                <label class="form__sight-label">
+                <label class="form__sight-label" tabindex="0">
                   <input class="visually-hidden form__sight-input" type="checkbox" name="red-rocks">
                   <span class="form__sight-name">Красные скалы</span>
                 </label>
@@ -173,48 +173,40 @@
         </div>
       </section>
     </main>
-    <div class="page-footer__wrapper">
-      <div class="page-footer__contacts">
-        <p class="page-footer__contacts-hashtag">#visitsedona</p>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">
+          <p class="page-footer__contacts-hashtag">#visitsedona</p>
+        </div>
+        <div class="page-footer__social">
+          <ul class="page-footer__social-list">
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--twitter" href="https://twitter.com">Мы в
+                Твиттере
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--facebook" href="https://www.facebook.com"> Мы
+                в
+                Файсбуке
+              </a>
+            </li>
+            <li class="page-footer__social-item">
+              <a class="page-footer__social-link page-footer__social-link--youtube" href="https://www.youtube.com">Мы в
+                Инстаграме
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright">
+          <b class="page-footer__copyright-text">Разработано</b>
+          <a class="button page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
+            <svg class="page-footer__copyright-icon-htmlacademy" width="42" height="42">
+              <use xlink:href="#icon-htmlacademy"></use>
+            </svg>
+          </a>
+        </div>
       </div>
-      <div class="page-footer__social">
-        <ul class="page-footer__social-list">
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://twitter.com">Мы в
-              Твиттере
-              <svg class="page-footer__social-icon page-footer__social-icon--twitter" width="17" height="15">
-                <use xlink:href="#icon-twitter"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.facebook.com"> Мы
-              в
-              Файсбуке
-              <svg class="page-footer__social-icon page-footer__social-icon--twitter" width="9" height="19">
-                <use xlink:href="#icon-facebook"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="page-footer__social-item">
-            <a class="page-footer__social-link" href="https://www.youtube.com">Мы в
-              Инстаграме
-              <svg class="page-footer__social-icon page-footer__social-icon--youtube" width="20" height="14">
-                <use xlink:href="#icon-youtube"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright">
-        <b class="page-footer__copyright-text">Разработано</b>
-        <a class="button page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy
-          <svg class="page-footer__copyright-icon-htmlacademy" width="42" height="42">
-            <use xlink:href="#icon-htmlacademy"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
     </footer>
   </div>
   <script src="js/script.min.js"></script>

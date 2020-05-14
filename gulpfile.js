@@ -22,7 +22,6 @@ gulp.task("clean", function () {
   return del("build")
 });
 
-
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
     .pipe(plumber())
@@ -83,7 +82,7 @@ gulp.task("htmlmin", function () {
 });
 
 gulp.task('compress-js', function () {
-  return gulp.src("source/js/script.js")
+  return gulp.src("build/js/script.js")
   .pipe(uglify())
   .pipe(rename("script.min.js"))
   .pipe(gulp.dest("build/js"));
@@ -113,6 +112,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/*.ico",
+    "source/js/*.js",
     // "source/js/picturefill.min.js",
   ], {
     base: "source"

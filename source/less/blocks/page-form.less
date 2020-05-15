@@ -170,7 +170,7 @@
 
 .form__feeling-item {
   position: relative;
-  padding-bottom: 41px;
+  padding-bottom: 43px;
 
   &:last-child {
     padding-bottom: 20px;
@@ -178,53 +178,52 @@
 }
 
 .form__feeling-input {
-  display: none;
+  position: absolute;
+  appearance: none;
 }
 
-.form__feeling-name {
-  display: inline-block;
-  position: relative;
-  vertical-align: middle;
+.form__feeling-radio {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -14px;
+  left: 8px;
+  border: 28px solid #f2f2f2;
+  border-radius: 50%;
+}
+
+.form__feeling-label {
+  display: block;
   padding-left: 87px;
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
   cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    top: -14px;
-    left: 8px;
-    border: 28px solid #f2f2f2;
-    border-radius: 50%;
-  }
 }
 
-.form__feeling-input:checked + .form__feeling-name::after {
+.form__feeling-input:checked + .form__feeling-radio::after {
   content: "";
   position: absolute;
   width: 16px;
   height: 16px;
-  top: 2px;
-  left: 25px;
+  top: -12px;
+  left: -12px;
   border: 12px solid #333333;
   border-radius: 50%;
 }
 
-.form__feeling-input:checked + .form__feeling-name:active::after {
-  opacity: 0.3;
-}
-
-.form__feeling-name:hover::before {
+.form__feeling-input:hover + .form__feeling-radio {
   border-color: #e5e5e5;
 }
 
-.form__feeling-name:active::before {
+.form__feeling-input:active + .form__feeling-radio {
   border-color: #d5d5d5;
 }
+
+.form__feeling-input:checked:active + .form__feeling-radio::after {
+  opacity: 0.3;
+}
+
 
 .form__sight-title {
   padding: 17px 0 10px;
@@ -246,50 +245,49 @@
 }
 
 .form__sight-input {
-  display: none;
+  position: absolute;
+  appearance: none;
 }
 
-.form__sight-name {
+.form__sight-label {
   display: block;
-  position: relative;
   padding-left: 80px;
   font-size: 18px;
   text-transform: none;
   font-weight: 700;
   cursor: pointer;
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 56px;
-    height: 56px;
-    top: -14px;
-    left: -1px;
-    border: 28px solid #f2f2f2;
-    border-radius: 5px;
-  }
 }
 
-.form__sight-input:checked + .form__sight-name::after {
+.form__sight-box {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -14px;
+  left: -1px;
+  border: 28px solid #f2f2f2;
+  border-radius: 5px;
+}
+
+.form__sight-input:checked + .form__sight-box::after {
   content: "";
   position: absolute;
   width: 25px;
   height: 19px;
-  top: 7px;
-  left: 17px;
+  top: -7px;
+  left: -9px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
-.form__sight-input:checked + .form__sight-name:active::after {
+.form__sight-input:checked:active + .form__sight-box::after {
   opacity: 0.3;
 }
 
-.form__sight-name:hover::before {
+.form__sight-input:hover + .form__sight-box {
   border-color: #e5e5e5;
 }
 
-.form__sight-name:active::before {
+.form__sight-input:active + .form__sight-box {
   border-color: #d5d5d5;
 }
 
@@ -461,11 +459,7 @@
   }
 
   .form__feeling-item {
-    padding-bottom: 50px;
-  }
-
-  .form__feeling-name {
-    padding-left: 84px;
+    padding-bottom: 53px;
   }
 
   .form__name {
@@ -706,7 +700,7 @@
   .form__feeling-title {
     padding: 0;
     padding-left: 80px;
-    padding-bottom: 71px;
+    padding-bottom: 73px;
   }
 
   .form__feeling-list {
@@ -719,20 +713,11 @@
   }
 
   .form__feeling-item {
-    padding-bottom: 51px;
+    padding-bottom: 53px;
   }
 
-  .form__feeling-name {
+  .form__feeling-label {
     padding-left: 79px;
-
-    &::before {
-      left: 5px;
-    }
-  }
-
-  .form__feeling-input:checked + .form__feeling-name::after {
-    top: 2px;
-    left: 20px;
   }
 
   .form__name-title {
@@ -812,7 +797,7 @@
   .form__sight-title {
     padding: 0;
     padding-top: 33px;
-    padding-bottom: 33px;
+    padding-bottom: 55px;
 
     &::before {
       width: 29%;
@@ -833,34 +818,17 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 43px;
   }
 
   .form__sight-item {
     padding: 0;
     width: auto;
-    margin-right: 65px;
+    margin-right: 70px;
 
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  .form__sight-name {
-    display: inline-block;
-    width: 100%;
-    padding: 23px 0;
-    padding-left: 80px;
-
-    &::before {
-      top: 8px;
-      left: 0;
-    }
-  }
-
-  .form__sight-input:checked + .form__sight-name::after {
-    left: 16px;
-    top: 28px;
   }
 
   .form__text-wrapper {

@@ -178,12 +178,6 @@
   cursor: pointer;
 }
 
-.form__feeling-input {
-  position: absolute;
-  appearance: none;
-  left: -1000px;
-}
-
 .form__feeling-radio {
   position: absolute;
   width: 56px;
@@ -238,12 +232,6 @@
   text-transform: none;
   font-weight: 700;
   cursor: pointer;
-}
-
-.form__sight-input {
-  position: absolute;
-  appearance: none;
-  left: -1000px;
 }
 
 .form__sight-box {
@@ -319,6 +307,10 @@
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
+}
+
+.form__required-field {
+  display: none;
 }
 
 .page-form__modal-failure {
@@ -401,13 +393,6 @@
 @media @tablet-width {
   .page-form {
     padding: 51px 40px 70px;
-
-    &::after {
-      position: absolute;
-      content: "* -  Обязательные поля";
-      bottom: 84px;
-      right: 69px;
-    }
   }
 
   .form {
@@ -620,6 +605,13 @@
     text-transform: uppercase;
   }
 
+  .form__required-field {
+    display: block;
+    padding-top: 5px;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+
   .page-form__modal-failure {
     width: 400px;
     padding: 64px 60px 40px;
@@ -681,11 +673,6 @@
 @media @desktop-width {
   .page-form {
     padding: 48px 120px 72px;
-
-    &::after {
-      bottom: 86px;
-      right: 130px;
-    }
   }
 
   .form__feeling-title {
@@ -855,6 +842,12 @@
   .form-button {
     margin-left: 0;
     padding: 17px 150px;
+  }
+
+  .form__required-field {
+    margin: 0;
+    padding-top: 20px;
+    margin-left: auto;
   }
 
   .page-form__modal-failure--open {

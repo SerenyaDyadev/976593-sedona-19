@@ -3,7 +3,7 @@
   display: block;
   margin: 0 auto;
   padding-top: 18px;
-  padding-bottom: 47px;
+  padding-bottom: 45px;
 }
 
 .form {
@@ -158,23 +158,24 @@
 }
 
 .form__feeling-title {
-  padding: 19px 0 10px;
+  padding: 20px 0 16px;
 }
 
 .form__feeling-list {
   .list-none();
   width: 100%;
-  padding: 26px 11px 24px;
+  padding: 0 11px 17px;
   border-bottom: 1px solid #333333;
 }
 
-.form__feeling-item {
+.form__feeling-label {
   position: relative;
-  padding-bottom: 43px;
-
-  &:last-child {
-    padding-bottom: 20px;
-  }
+  display: block;
+  padding: 20px 0 24px 87px;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .form__feeling-input {
@@ -184,40 +185,33 @@
 
 .form__feeling-radio {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 56px;
   height: 56px;
-  top: -14px;
-  left: 8px;
-  border: 28px solid #f2f2f2;
+  background-color: #f2f2f2;
+  top: 7px;
+  left: 9px;
   border-radius: 50%;
-}
-
-.form__feeling-label {
-  display: block;
-  padding-left: 87px;
-  font-size: 18px;
-  text-transform: none;
-  font-weight: 700;
-  cursor: pointer;
 }
 
 .form__feeling-input:checked + .form__feeling-radio::after {
   content: "";
   position: absolute;
-  width: 16px;
-  height: 16px;
-  top: -12px;
-  left: -12px;
-  border: 12px solid #333333;
+  width: 22px;
+  height: 22px;
+  background-color: #333333;
   border-radius: 50%;
 }
 
+.form__feeling-input:focus + .form__feeling-radio,
 .form__feeling-input:hover + .form__feeling-radio {
-  border-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .form__feeling-input:active + .form__feeling-radio {
-  border-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .form__feeling-input:checked:active + .form__feeling-radio::after {
@@ -226,22 +220,24 @@
 
 
 .form__sight-title {
-  padding: 17px 0 10px;
+  padding: 18px 0 4px;
 }
 
 .form__sight-list {
   .list-none();
-  padding: 21px 0 42px 19px;
+  width: 100%;
+  padding: 0 0 10px;
   border-bottom: 1px solid #333333;
 }
 
-.form__sight-item {
+.form__sight-label {
+  display: block;
   position: relative;
-  padding-bottom: 54px;
-
-  &:last-child {
-    padding-bottom: 0;
-  }
+  padding: 26px 0 29px 98px;
+  font-size: 18px;
+  text-transform: none;
+  font-weight: 700;
+  cursor: pointer;
 }
 
 .form__sight-input {
@@ -249,22 +245,16 @@
   appearance: none;
 }
 
-.form__sight-label {
-  display: block;
-  padding-left: 80px;
-  font-size: 18px;
-  text-transform: none;
-  font-weight: 700;
-  cursor: pointer;
-}
-
 .form__sight-box {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 56px;
   height: 56px;
-  top: -14px;
-  left: -1px;
-  border: 28px solid #f2f2f2;
+  top: 13px;
+  left: 19px;
+  background-color: #f2f2f2;
   border-radius: 5px;
 }
 
@@ -273,8 +263,6 @@
   position: absolute;
   width: 25px;
   height: 19px;
-  top: -7px;
-  left: -9px;
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
@@ -283,12 +271,13 @@
   opacity: 0.3;
 }
 
+.form__sight-input:focus + .form__sight-box,
 .form__sight-input:hover + .form__sight-box {
-  border-color: #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .form__sight-input:active + .form__sight-box {
-  border-color: #d5d5d5;
+  background-color: #d5d5d5;
 }
 
 .form__text-wrapper {
@@ -328,8 +317,8 @@
 
 .form-button {
   margin: 0 auto;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .page-form__modal-failure {
@@ -437,14 +426,13 @@
   .form__feeling-title {
     text-align: left;
     font-size: 21px;
-    padding-left: 20px;
-    padding-bottom: 71px;
+    padding: 18px 0 53px 18px;
   }
 
   .form__feeling-list {
     padding: 0;
-    padding-left: 12px;
-    padding-bottom: 20px;
+    padding-left: 9px;
+    padding-bottom: 9px;
     border: none;
 
     &::after {
@@ -458,8 +446,8 @@
     }
   }
 
-  .form__feeling-item {
-    padding-bottom: 53px;
+  .form__feeling-label {
+    padding: 20px 0 32px 84px;
   }
 
   .form__name {
@@ -540,7 +528,7 @@
     position: relative;
     padding: 0;
     padding-top: 13px;
-    padding-bottom: 56px;
+    padding-bottom: 30px;
     font-size: 21px;
 
     &::before {
@@ -568,14 +556,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 0 54px 22px 115px;
+    padding: 0 75px 48px 95px;
     border: none;
   }
 
   .form__sight-item {
     width: 50%;
     padding: 0;
-    padding-bottom: 62px;
+  }
+
+  .form__sight-label {
+    padding: 26px 0 36px 98px;
   }
 
   .form__text {
@@ -611,7 +602,7 @@
   }
 
   .form__text-wrapper {
-    padding-bottom: 59px;
+    padding-bottom: 56px;
   }
 
   .form__text-textarea {
@@ -624,8 +615,8 @@
 
   .form-button {
     margin: 0;
-    margin-left: 20px;
-    padding: 17px 63px;
+    margin-left: 18px;
+    padding: 17px 70px;
     text-transform: uppercase;
   }
 
@@ -700,7 +691,7 @@
   .form__feeling-title {
     padding: 0;
     padding-left: 80px;
-    padding-bottom: 73px;
+    padding-bottom: 53px;
   }
 
   .form__feeling-list {
@@ -712,12 +703,13 @@
     }
   }
 
-  .form__feeling-item {
-    padding-bottom: 53px;
-  }
-
   .form__feeling-label {
     padding-left: 79px;
+  }
+
+  .form__feeling-radio {
+    top: 6px;
+    left: 4px;
   }
 
   .form__name-title {
@@ -741,19 +733,19 @@
 
   .form__contacts-title {
     padding: 0;
-    padding-top: 63px;
-    padding-bottom: 75px;
+    padding-top: 53px;
+    padding-bottom: 73px;
 
     &::before {
       width: 29%;
       left: 0;
-      top: 75px;
+      top: 65px;
     }
 
     &::after {
       width: 29%;
       right: 0;
-      top: 75px;
+      top: 65px;
     }
   }
 
@@ -796,8 +788,8 @@
 
   .form__sight-title {
     padding: 0;
-    padding-top: 33px;
-    padding-bottom: 55px;
+    padding-top: 34px;
+    padding-bottom: 30px;
 
     &::before {
       width: 29%;
@@ -818,23 +810,31 @@
     flex-wrap: wrap;
     width: 100%;
     padding: 0;
-    padding-bottom: 43px;
+    padding-bottom: 7px;
   }
 
   .form__sight-item {
     padding: 0;
     width: auto;
-    margin-right: 70px;
+    margin-right: 68px;
 
-    &:last-child {
+    &:nth-child(4n) {
       margin-right: 0;
     }
+  }
+
+  .form__sight-label {
+    padding-left: 80px;
+  }
+
+  .form__sight-box {
+    left: 0px;
   }
 
   .form__text-wrapper {
     padding: 0;
     padding-top: 39px;
-    padding-bottom: 57px;
+    padding-bottom: 55px;
   }
 
   .form__text-title {
@@ -854,7 +854,7 @@
 
   .form-button {
     margin-left: 0;
-    padding: 17px 141px;
+    padding: 17px 150px;
   }
 
   .page-form__modal-failure--open {

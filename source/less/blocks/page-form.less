@@ -237,6 +237,8 @@
 .form__sight-input {
   position: absolute;
   appearance: none;
+  left: 0;
+  z-index: -1;
 }
 
 .form__sight-box {
@@ -271,6 +273,10 @@
 
 .form__sight-input:active + .form__sight-box {
   background-color: #d5d5d5;
+}
+
+.form__sight-item:focus {
+  border: 1px solid red;
 }
 
 .form__text-wrapper {

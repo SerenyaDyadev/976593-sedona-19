@@ -3,9 +3,9 @@ var navToggle = document.querySelector('.main-nav__toggle');
 var navToggleCross = document.querySelector('.main-nav__toggle-cross');
 var navToggleMenu = document.querySelector('.main-nav__toggle-menu');
 var modalFailure = document.querySelector('.page-form__modal-failure');
-var modalSucces = document.querySelector('.page-form__modal-succes');
+var modalSuccess = document.querySelector('.page-form__modal-success');
 var modalFailureButton = document.querySelector('.page-form__modal-failure-button')
-var modalSuccesButton = document.querySelector('.page-form__modal-succes-button')
+var modalSuccessButton = document.querySelector('.page-form__modal-success-button')
 
 navToggle.classList.remove('main-nav__toggle--nojs');
 
@@ -31,11 +31,11 @@ modalFailureButton.addEventListener('click', function () {
 }
 });
 
-modalSuccesButton.addEventListener('click', function () {
-  if (modalSuccesButton) {
-    if (modalSucces.classList.contains("page-form__modal-succes--open")) {
+modalSuccessButton.addEventListener('click', function () {
+  if (modalSuccessButton) {
+    if (modalSuccess.classList.contains("page-form__modal-success--open")) {
       console.log ("111")
-    modalSucces.classList.remove("page-form__modal-succes--open")
+    modalSuccess.classList.remove("page-form__modal-success--open")
   }
 }
 });

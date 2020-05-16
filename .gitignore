@@ -9,4 +9,5 @@
 node_modules/
 npm-debug.*
 build
+source/js/scriptPic.js
 Thumbs.db

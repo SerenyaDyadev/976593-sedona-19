@@ -1,0 +1,111 @@
+.intro {
+  position: relative;
+  min-height: 387px;
+  padding-top: 88px;
+  z-index: 0;
+  background-color: #444444;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+
+  &--inner {
+    min-height: 154px;
+    padding-top: 49px;
+    background-position-y: bottom;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 27px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+.intro__text-sedona-index {
+  display: block;
+  margin: 0 auto;
+}
+
+.intro__text-sedona {
+  display: block;
+  margin: 0 auto;
+}
+
+@media @retina {
+  .intro {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: cover;
+  }
+}
+
+@media @tablet-width {
+  .intro {
+    z-index: -1;
+    position: relative;
+    min-height: 518px;
+    padding-top: 78px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: cover;
+
+    &--inner {
+      min-height: 290px;
+      padding-top: 95px;
+    }
+
+    &::after {
+      height: 57px;
+      background-color: transparent;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+  }
+
+  .intro__text-sedona-index {
+    width: 460px;
+  }
+
+  .intro__text-sedona {
+    width: 458px;
+  }
+
+  @media @retina {
+    .intro {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
+
+@media @desktop-width {
+  .intro {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+
+    &--inner {
+      min-height: 300px;
+      padding-top: 103px;
+    }
+
+    &::after {
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+  }
+
+  .intro__text-sedona {
+    width: 458px;
+  }
+
+  @media @retina {
+    .intro {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
+  }
+}
